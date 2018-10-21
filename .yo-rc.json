@@ -1,0 +1,21 @@
+{
+  "generator-ngx-rocket": {
+    "version": "5.2.0",
+    "props": {
+      "location": "path",
+      "appName": "willcapo",
+      "target": [
+        "web"
+      ],
+      "pwa": true,
+      "ui": "bootstrap",
+      "auth": true,
+      "lazy": false,
+      "angulartics": false,
+      "prettier": false,
+      "projectName": "willcapo",
+      "packageManager": "npm",
+      "mobile": []
+    }
+  }
+}
