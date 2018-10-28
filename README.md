@@ -1,5 +1,13 @@
 # willcapo
 
+## Dev Run
+`npm run build` builds the prod in `dist` folder
+`dist` is what gets deployed on firebase
+`firebase deploy`
+don't forget to npm run build first, or you won't see your changes
+`firebase serve` to see it running on `localhost:5000` "You can view and test your Firebase project on locally hosted URLs before deploying to production. emulate your project using local HTTP functions."
+
+
 This project was generated with [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket/)
 version 5.2.0
 

@@ -7,3 +7,25 @@ q {
   font-size: 1.2rem;
   quotes: "« " " »";
 }
+
+// Cards
+.left-style{
+  float:left;
+  width:45%;
+}
+.right-style{
+  float:right;
+  width:45%;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child {
+  flex: 1 0 21%; /* explanation below */
+  margin: 5px;
+  // height: 100px;
+  // background-color: blue;
+}
