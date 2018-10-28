@@ -21,10 +21,21 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.cards = [{
-      name: 'travel', description: 'photo albums and writings',
+      name: 'Travel', description: 'photo albums and writings',
     }, {
-      name: 'music', description: 'videos and music',
-
+      name: 'Music', description: 'videos and music',
+    }, {
+      name: 'Writings', description: 'pieces written',
+    }, {
+      name: 'Color', description: 'change the color stylings',
+    }, {
+      name: 'Consulting', description: 'what I can do for you',
+    }, {
+      name: 'Sales', description: "I'll help you sell",
+    }, {
+      name: 'Book List', description: 'the books I read',
+    }, {
+      name: 'Github', description: 'my software',
     }]
     
     this.isLoading = true;
