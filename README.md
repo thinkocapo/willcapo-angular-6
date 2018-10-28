@@ -1,5 +1,12 @@
 # willcapo
 
+## Dev Run
+`npm run build` builds the prod in `dist` folder
+`dist` is what gets deployed on firebase
+`firebase deploy`
+don't forget to npm run build first, or you won't see your changes
+
+
 This project was generated with [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket/)
 version 5.2.0
 
