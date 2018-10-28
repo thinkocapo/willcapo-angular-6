@@ -1,5 +1,5 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark wc-navbar">
     
     <!-- Is Hamburger Menu when you collapse/minimize the window - WC -->
     <button class="navbar-toggler" type="button" aria-controls="navbar-menu"
@@ -13,33 +13,23 @@
       
       <div class="navbar-nav">
 
-        <a class="nav-item wc-nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
           <span translate>RESUME</span>
         </a>
-        <a class="nav-item wc-nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
           <span translate>FHIR</span>
         </a>
         <a class="nav-item wc-brand nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
           <!-- <i class="fas fa-home"></i> -->
-          <span bg-success translate>APP_NAME</span>
+          <span class="wc-nav-text-color" bg-success translate>APP_NAME</span>
         </a>
-        <a class="nav-item wc-nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
           <span translate>BLOCKCHAIN</span>
         </a>
-
-        <!-- menu hamburger -->
-        <div class="nav-item" ngbDropdown placement="bottom-right">
-            <a id="user-dropdown" class="nav-link" ngbDropdownToggle>
-              <i class="fas fa-user-circle"></i>
-            </a>
-            <div ngbDropdownMenu aria-labelledby="user-dropdown">
-              <h6 class="dropdown-header">
-                <span translate>Logged in as</span> <b>{{username}}</b></h6>
-              <div class="dropdown-divider"></div>
-              <button class="dropdown-item" (click)="logout()" translate>Logout</button>
-            </div>
-          </div>
-
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+          <span translate>CODE</span>
+        </a>
+        
       </div>
 
       <!-- <div class="navbar-nav ml-auto">

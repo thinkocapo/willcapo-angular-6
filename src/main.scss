@@ -23,9 +23,57 @@
 #1c222e black
 #41533b green
 #554840 brown-grey
+#FF6700 safety orange "blaze orange"
 */
 
-// see .child in home.component.scss
-// .border-card {
-//     border-color: black;
-// }
+/*
+CARD
+*/
+// by id selector because only 1 place used
+#wc-card {
+    // border-color: black !important;
+    background-color: #9e9a75 !important // tan
+    // background-color: #554840 !important
+}
+.wc-card-button {
+    background-color: #FF6700; // TEST THIS...implement somewhere
+}
+
+/*
+NAVBAR
+header.component.html
+*/
+.wc-navbar {
+    // background-color: #9e9a75 !important
+    background-color: #554840 !important;
+    margin-bottom: 0px !important;
+}
+.wc-nav-item {
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+.wc-nav-text-color {
+    color: #1c222e !important;
+}
+
+/*
+BACKGROUND
+index.html <html>
+home.component.html > container
+*/
+.wc-body-background {
+    background-color: #41533b;
+}
+
+
+#wc-quote {
+    padding-top: 10px;
+    height: 75px;
+    align-items: center;
+    // display: flex;
+    //   flex: 1 0 50%;
+    // padding: 4rem 0.5rem;
+}

@@ -1,6 +1,6 @@
 <!-- https://willcapo-0821.firebaseapp.com npm run build -->
-<div class="container-fluid">
-  <div class="row">
+<div id="wc-body-background" class="container-fluid wc-body-background">
+  <div id="wc-quote" class="row align-self-center">
     <div class="col-12 text-center">
         <h5>Some people chart their life on a linear graph. Mine is more like Starfox 64</h5>
     </div>
@@ -9,7 +9,7 @@
   <div class="row">
     <div class="col-xs-12 parent justify-content-center">
 
-          <div *ngFor="let card of cards" class="card child border-card" style="min-width: 19rem; max-width: 19rem;">
+          <div id="wc-card" *ngFor="let card of cards" class="card child" style="min-width: 19rem; max-width: 19rem;">
               <div class="card-body">
                 <h5 class="card-title">{{card.name}}</h5>
                 <p class="card-text">{{card.description}}</p>
