@@ -2,14 +2,14 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-12 text-center">
-        <h5>Cards...</h5>
+        <h5>Some people chart their life on a linear graph. Mine is more like Starfox 64</h5>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-12 parent">
+    <div class="col-xs-12 parent justify-content-center">
 
-          <div *ngFor="let card of cards" class="card child" style="width: 19rem;">
+          <div *ngFor="let card of cards" class="card child" style="min-width: 19rem; max-width: 19rem;">
               <div class="card-body">
                 <h5 class="card-title">{{card.name}}</h5>
                 <p class="card-text">{{card.description}}</p>
