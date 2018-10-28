@@ -3,6 +3,8 @@ import { finalize } from 'rxjs/operators';
 
 import { QuoteService } from './quote.service';
 
+import { Card } from '../models/card.model'
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -10,16 +12,23 @@ import { QuoteService } from './quote.service';
 })
 export class HomeComponent implements OnInit {
 
+  cards: Card[]
+
   quote: string;
   isLoading: boolean;
 
   constructor(private quoteService: QuoteService) { }
 
   ngOnInit() {
+    this.cards = [{
+      name: 'travel', description: 'photo albums and writings',
+    }, {
+      name: 'music', description: 'videos and music',
+
+    }]
+    
     this.isLoading = true;
-    this.quoteService.getRandomQuote({ category: 'dev' })
-      .pipe(finalize(() => { this.isLoading = false; }))
-      .subscribe((quote: string) => { this.quote = quote; });
+    // .pipe(finalize(() => { this.isLoading = false; }))
   }
 
 }
