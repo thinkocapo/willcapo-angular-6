@@ -29,6 +29,13 @@
 /*
 CARD
 */
+
+#wc-card-container {
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+
 // by id selector because only 1 place used
 #wc-card {
     // border-color: black !important;
@@ -43,6 +50,14 @@ CARD
 .wc-card-button {
     background-color: #FF6700; // TEST THIS...implement somewhere
     border-color: #1c222e;
+}
+.wc-card-title-text {
+    // position: absolute;
+    // bottom: 0;
+}
+.wc-card-img {
+    height: 50%;
+    width: 50%;
 }
 
 /*
@@ -91,3 +106,8 @@ home.component.html > container
     //   flex: 1 0 50%;
     // padding: 4rem 0.5rem;
 }
+
+
+// .p1 {
+    // position: relative;
+// }

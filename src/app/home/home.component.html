@@ -8,18 +8,39 @@
 
   <!-- https://www.youtube.com/watch?v=2qQxwT-Qm5E -->
   <div class="row">
-    <div class="col-xs-12 parent justify-content-center">
+    <div id="wc-card-container" class="col-xs-12 parent justify-content-center">
 
+        <!-- <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div> -->
           <div id="wc-card" 
             *ngFor="let card of cards"
             (click)="handleClick(card)"
-            class="card child" style="min-width: 19rem; max-width: 19rem;">
-              <div class="card-body">
-                <h5 class="card-title">{{card.name}}</h5>
-                <p class="card-text">{{card.description}}</p>
+            class="card wc-card-position wc-card-style text-center">
+              
+              <!-- <div class="row">
+                <div class="col-12 justify-content-center">
+                    <img class="card-img-top wc-card-img" src="assets/ngx-rocket-logo.png" alt="Card image cap">
+                </div>
+              </div> -->
+
+              <div class="justify-content-center">
+                <img class="card-img-top wc-card-img" src="assets/ngx-rocket-logo.png" alt="Card image cap">
+              </div>
+
+              <div class="card-body p1">
+
+                <div class="wc-card-title-text">
+                  <h5 class="card-title">{{card.name}}</h5>
+                  <p class="card-text">{{card.description}}</p>
+                </div>
 
                 <!-- <a href="#" class="btn btn-primary wc-card-button">Go somewhere</a> -->
-
               </div>
           </div>
      
