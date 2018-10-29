@@ -31,11 +31,11 @@ export class HomeComponent implements OnInit {
     }, {
       name: 'Writings', description: 'pieces written',
     }, {
-      name: 'Color', description: 'change the color stylings',
+      name: 'Apply Color', description: 'colorize willcapo.com, reset',
     }, {
-      name: 'Consulting', description: 'what I can do for you',
+      name: 'Apply Picture', description: 'background photo, reset',
     }, {
-      name: 'Sales', description: "I'll help you sell",
+      name: 'Sales & Consulting', description: "I'll help you sell",
     }, {
       name: 'Book List', description: 'the books I read',
     }, {
