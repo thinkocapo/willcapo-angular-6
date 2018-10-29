@@ -45,20 +45,26 @@ CARD
 }
 #wc-card:hover {
   background-color: white !important;
-
 }
-.wc-card-button {
-    background-color: #FF6700; // TEST THIS...implement somewhere
-    border-color: #1c222e;
+.wc-card-position {
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
 }
-.wc-card-title-text {
-    // position: absolute;
-    // bottom: 0;
+.wc-card-style { // 19 to only fit 4 Cards in 1 Row
+    min-height: 15rem;
+    max-height: 15rem;
+    min-width: 15rem;
+    max-width: 15rem;
+    padding-top: 17px;
 }
 .wc-card-img {
     height: 50%;
     width: 50%;
 }
+// .wc-card-button {
+//     background-color: #FF6700; // TEST THIS...implement somewhere
+//     border-color: #1c222e;
+// }
 
 /*
 NAVBAR
