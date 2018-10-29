@@ -1,10 +1,10 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark wc-navbar">
     
     <!-- Is Hamburger Menu when you collapse/minimize the window - WC -->
     <button class="navbar-toggler" type="button" aria-controls="navbar-menu"
             aria-label="Toggle navigation" (click)="toggleMenu()" [attr.aria-expanded]="!menuHidden">
-      <a class="navbar-brand" href="https://github.com/ngx-rocket" translate>Cappp</a>    
+      <a class="navbar-brand" href="https://github.com/ngx-rocket" translate>WC</a>    
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -13,23 +13,25 @@
       
       <div class="navbar-nav">
 
-        <a class="nav-item wc-nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
           <span translate>RESUME</span>
         </a>
-        <a class="nav-item wc-nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
           <span translate>FHIR</span>
         </a>
-        <a class="nav-item wc-brand nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+
+        <a class="nav-item wc-nav-app-name nav-link text-uppercase text-center" routerLink="/home" routerLinkActive="active">
           <!-- <i class="fas fa-home"></i> -->
-          <span bg-success translate>APP_NAME</span>
-        </a>
-        <a class="nav-item wc-nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
-          <span translate>BLOCKCHAIN</span>
-        </a>
-        <a class="nav-item wc-nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
-          <span translate>OTHER</span>
+          <span class="wc-nav-text-color" bg-success translate>APP_NAME</span>
         </a>
 
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+          <span translate>BLOCKCHAIN</span>
+        </a>
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+          <span translate>GITHUB/CODE</span>
+        </a>
+        
       </div>
 
       <!-- <div class="navbar-nav ml-auto">

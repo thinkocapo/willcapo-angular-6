@@ -23,4 +23,101 @@
 #1c222e black
 #41533b green
 #554840 brown-grey
+#FF6700 safety orange "blaze orange"
+
+or
+
+https://www.color-hex.com/color-palette/5216
 */
+
+/*
+CARD
+*/
+
+#wc-card-container {
+    // padding-left: 38px;
+    // padding-right: 38px;
+}
+
+
+// by id selector because only 1 place used
+#wc-card {
+    // border-color: black !important;
+    background-color: #9e9a75 !important;
+    cursor: pointer;
+    // background-color: #554840 !important
+}
+#wc-card:hover {
+  background-color: white !important;
+}
+.wc-card-position {
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
+}
+.wc-card-style { // 19 to only fit 4 Cards in 1 Row
+    min-height: 15rem;
+    max-height: 15rem;
+    min-width: 15rem;
+    max-width: 15rem;
+    padding-top: 17px;
+}
+.wc-card-img {
+    height: 50%;
+    width: 50%;
+}
+// .wc-card-button {
+//     background-color: #FF6700; // TEST THIS...implement somewhere
+//     border-color: #1c222e;
+// }
+
+/*
+NAVBAR
+header.component.html
+*/
+.wc-navbar {
+    // background-color: #9e9a75 !important
+    background-color: #554840 !important;
+    margin-bottom: 0px !important;
+}
+.wc-nav-item {
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+}
+.wc-nav-text-color {
+    color: #1c222e !important;
+    font-weight: 900; // normal , lighter, bold, 800
+}
+.wc-nav-app-name {
+    font-size: 38px;
+    // margin: auto;
+    // text-align: center;
+    width: 225px;
+}
+
+/*
+BACKGROUND
+index.html <html>
+home.component.html > container
+*/
+.wc-body-background {
+    background-color: #41533b;
+}
+
+
+#wc-quote {
+    padding-top: 10px;
+    height: 75px;
+    align-items: center;
+    font-style: italic
+    // display: flex;
+    //   flex: 1 0 50%;
+    // padding: 4rem 0.5rem;
+}
+
+
+// .p1 {
+    // position: relative;
+// }
