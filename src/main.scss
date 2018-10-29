@@ -32,11 +32,17 @@ CARD
 // by id selector because only 1 place used
 #wc-card {
     // border-color: black !important;
-    background-color: #9e9a75 !important // tan
+    background-color: #9e9a75 !important;
+    cursor: pointer;
     // background-color: #554840 !important
+}
+#wc-card:hover {
+  background-color: white !important;
+
 }
 .wc-card-button {
     background-color: #FF6700; // TEST THIS...implement somewhere
+    border-color: #1c222e;
 }
 
 /*
@@ -57,6 +63,13 @@ header.component.html
 }
 .wc-nav-text-color {
     color: #1c222e !important;
+    font-weight: 900; // normal , lighter, bold, 800
+}
+.wc-nav-app-name {
+    font-size: 36px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
 }
 
 /*

@@ -6,67 +6,25 @@
     </div>
   </div>
 
+  <!-- https://www.youtube.com/watch?v=2qQxwT-Qm5E -->
   <div class="row">
     <div class="col-xs-12 parent justify-content-center">
 
-          <div id="wc-card" *ngFor="let card of cards" class="card child" style="min-width: 19rem; max-width: 19rem;">
+          <div id="wc-card" 
+            *ngFor="let card of cards"
+            (click)="handleClick(card)"
+            class="card child" style="min-width: 19rem; max-width: 19rem;">
               <div class="card-body">
                 <h5 class="card-title">{{card.name}}</h5>
                 <p class="card-text">{{card.description}}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                <!-- <a href="#" class="btn btn-primary wc-card-button">Go somewhere</a> -->
+
               </div>
           </div>
      
     </div>
   </div>
-
-  <!-- <div class="row">
-    <div class="col-12">
-      <div *ngFor="let card of cards; let i = index;">    
-          <div *ngIf="i === 0">
-              <div class="card" style="width: 19rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">1{{card.name}}</h5>
-                    <p class="card-text">{{card.description}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-          </div>
-
-          <div *ngIf="i === 1">
-              <div class="card" style="width: 19rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">2{{card.name}}</h5>
-                    <p class="card-text">{{card.description}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-          </div>
-
-
-          <div *ngIf="i === 2">
-              <div class="card" style="width: 19rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">3{{card.name}}</h5>
-                    <p class="card-text">{{card.description}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-          </div>
-
-
-          <div *ngIf="i === 3">
-              <div class="card" style="width: 19rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">4{{card.name}}</h5>
-                    <p class="card-text">{{card.description}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-  </div> -->
   
 
 </div>

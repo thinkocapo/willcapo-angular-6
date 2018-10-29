@@ -19,6 +19,10 @@ export class HomeComponent implements OnInit {
 
   constructor(private quoteService: QuoteService) { }
 
+  handleClick() {
+    console.log('handleClick()')
+  }
+
   ngOnInit() {
     this.cards = [{
       name: 'Travel', description: 'photo albums and writings',
