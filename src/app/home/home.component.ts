@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
     }, {
       name: 'Book List', description: 'the books I read',
     }, {
-      name: 'Github', description: 'my software',
+      name: 'How This Works', description: 'the code behind this site',
     }]
     
     this.isLoading = true;
