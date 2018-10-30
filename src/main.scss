@@ -117,7 +117,35 @@ home.component.html > container
     // padding: 4rem 0.5rem;
 }
 
+.wc-footer-color {
+    background-color: #554840 !important;
+}
+.wc-footer-contact-me {
+    background-color: #9e9a75;
+    border-radius: 5px;
+    border-color: black;
+    height: 50px;
+    max-width: 50%;
+
+    // margin-left:auto;
+    // margin-right:auto;
+    display:block;
+
+    margin: 0 auto;
+
+    // vertical-align: middle;
+    text-align:center; line-height:25px;
+
+}
+// .good {
+//     text-align:center; line-height:25px;
+// }
+
 
 // .p1 {
     // position: relative;
 // }
+
+.body {
+    margin-bottom: 60px;
+}
