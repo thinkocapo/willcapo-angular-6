@@ -24,13 +24,15 @@ const INITIAL_STATE: interfaceStylesState = {
 }
 
 export function reducerStyles (state = INITIAL_STATE, action: any): interfaceStylesState {    
-    switch (action.type) {
+    const { payload, type } = action
+
+    switch (type) {
         case SET_COLOR_THEME:
             return {
-                ...state,
-                // ...
+                ...payload,
             }
         default:
             return state
     }
+
 }
