@@ -16,6 +16,19 @@ import { LoginModule } from './login/login.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { StoreModule } from '@ngrx/store';
+import { reducers, AppState } from './store/reducers/index';
+import { storeLogger } from 'ngrx-store-logger';
+import { ActionReducerMap, ActionReducer } from '@ngrx/store';
+
+
+export function logger(reducer: ActionReducer<AppState>): any {
+  // default, no options
+  return storeLogger()(reducer);
+} 
+export const metaReducers = environment.production ? [] : [logger];
+
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -30,7 +43,11 @@ import { AppRoutingModule } from './app-routing.module';
     HomeModule,
     AboutModule,
     LoginModule,
-    AppRoutingModule // must be imported as the last module as it contains the fallback route
+    StoreModule.forRoot( // NgRx sets up a Store and sets up each reducer as a thing that can edit the store. sets the initial states
+      reducers,
+      {metaReducers}
+    ),
+    AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],
   providers: [
