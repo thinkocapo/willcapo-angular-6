@@ -71,6 +71,11 @@ CARD
 .wc-card-img {
     height: 50%;
     width: 50%;
+    border-radius: 9px;
+}
+
+.card {
+    border-radius: 3.25rem !important;
 }
 // .wc-card-button {
 //     background-color: #FF6700; // TEST THIS...implement somewhere
