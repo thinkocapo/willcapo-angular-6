@@ -20,23 +20,27 @@
 // element {
 //     --tan-color: #9e9a75;
 // }
-/*
-#604439 brown
-#9e9a75 tan
-#1c222e black
-#41533b green
-#554840 brown-grey
-#FF6700 safety orange "blaze orange"
 
-or
+.palette-1 {
+    color: #604439; // brown
+    color: #9e9a75; // tan
+    color: #1c222e; // black
+    color: #41533b; // green
+    color: #554840; // brown grey
+    color: #FF6700; // safety orange
+}
+// https://www.color-hex.com/color-palette/5216
+.palette-2 {
+    color: #002500; // green
+    color: #502500; // brown
+    color: #505000; // olive
+    color: #000000; // black
+    color: #aa8060; // peach
+}
 
-https://www.color-hex.com/color-palette/5216
-*/
-
-/*
+/******
 CARD
-*/
-
+******/
 #wc-card-container {
     // padding-left: 38px;
     // padding-right: 38px;
@@ -125,7 +129,8 @@ home.component.html > container
 }
 .wc-footer-contact-me {
     font-size: 2em;
-    background-color: #FF6700;
+    background-color: #002500;
+    color: black;
     cursor: pointer;
     border-radius: 3px;
     border-color: black;
@@ -153,3 +158,8 @@ home.component.html > container
     margin-bottom: 60px;
 }
 
+// Web-safe fonts https://www.w3schools.com/cssref/css_websafe_fonts.asp
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    // font-family: Tahoma, Geneva, sans-serif;
+  }
