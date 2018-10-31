@@ -38,44 +38,44 @@ export class HomeComponent implements OnInit {
     {
       name: 'Travel', description: 'photo albums and writings',
       callToAction: function travelFunc() {},
-      img: ""
+      img: "assets/travel.jpeg"
     }, 
     {
       name: 'Music', description: 'videos and music',
       callToAction: function playFunkyMusic() {},
-      img: ""
+      img: "assets/ngx-rocket-logo.png"
     }, 
     {
       name: 'Writings', description: 'pieces written',
       callToAction: function loadWritingsFunc() {},
-      img: ""
+      img: "assets/writing.png"
     }, 
     {
       name: 'Apply Color', description: 'colorize willcapo.com, reset',
       callToAction: function colorizeFunc() {
         console.log('this will call a redux Action to update the color palette', this)
       },
-      img: ""
+      img: "assets/palette.png"
     }, 
     {
       name: 'Apply Picture', description: 'background photo, reset',
       callToAction: function picturizeFunc() {},
-      img: ""
+      img: "assets/camera.jpeg"
     }, 
     {
       name: 'Sales & Consulting', description: "I'll help you sell",
       callToAction: function whatTheFunc() {},
-      img: ""
+      img: "assets/sales.png"
     }, 
     {
       name: 'Book List', description: 'the books I read',
       callToAction: function funkyBooks() {},
-      img: ""
+      img: "assets/books.jpeg"
     }, 
     {
       name: 'How This Works', description: 'the code behind this site',
       callToAction: function funkyFunc() {},
-      img: ""
+      img: "assets/how-this-works.png"
     }]
     
     this.isLoading = true;
