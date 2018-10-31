@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit {
     {
       name: 'Apply Color', description: 'colorize willcapo.com, reset',
       callToAction: function colorizeFunc() {
-        console.log('THIS is colorizeFunc', this)
+        console.log('this will call a redux Action to update the color palette', this)
       },
       img: ""
     }, 
