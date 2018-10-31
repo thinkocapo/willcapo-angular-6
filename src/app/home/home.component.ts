@@ -37,37 +37,45 @@ export class HomeComponent implements OnInit {
     this.cards = [
     {
       name: 'Travel', description: 'photo albums and writings',
-      callToAction: function travelFunc() {}
+      callToAction: function travelFunc() {},
+      img: ""
     }, 
     {
       name: 'Music', description: 'videos and music',
-      callToAction: function playFunkyMusic() {}
+      callToAction: function playFunkyMusic() {},
+      img: ""
     }, 
     {
       name: 'Writings', description: 'pieces written',
-      callToAction: function loadWritingsFunc() {}
+      callToAction: function loadWritingsFunc() {},
+      img: ""
     }, 
     {
       name: 'Apply Color', description: 'colorize willcapo.com, reset',
       callToAction: function colorizeFunc() {
         console.log('THIS is colorizeFunc', this)
-      }
+      },
+      img: ""
     }, 
     {
       name: 'Apply Picture', description: 'background photo, reset',
-      callToAction: function picturizeFunc() {}
+      callToAction: function picturizeFunc() {},
+      img: ""
     }, 
     {
       name: 'Sales & Consulting', description: "I'll help you sell",
-      callToAction: function whatTheFunc() {}
+      callToAction: function whatTheFunc() {},
+      img: ""
     }, 
     {
       name: 'Book List', description: 'the books I read',
-      callToAction: function funkyBooks() {}
+      callToAction: function funkyBooks() {},
+      img: ""
     }, 
     {
       name: 'How This Works', description: 'the code behind this site',
-      callToAction: function funkyFunc() {}
+      callToAction: function funkyFunc() {},
+      img: ""
     }]
     
     this.isLoading = true;
