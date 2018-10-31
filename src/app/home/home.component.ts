@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
     {
       name: 'Music', description: 'videos and music',
       callToAction: function playFunkyMusic() {},
-      img: "assets/ngx-rocket-logo.png"
+      img: "assets/music.png"
     }, 
     {
       name: 'Writings', description: 'pieces written',
