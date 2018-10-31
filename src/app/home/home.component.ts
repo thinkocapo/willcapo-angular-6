@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
 
     this.cards = [
     {
-      name: 'Travel', description: 'photo albums and writings',
+      name: 'Travel', description: 'photo albums',
       callToAction: function travelFunc() {},
       img: "assets/travel.jpeg"
     }, 
@@ -63,12 +63,12 @@ export class HomeComponent implements OnInit {
       img: "assets/camera.jpeg"
     }, 
     {
-      name: 'Sales & Consulting', description: "I'll help you sell",
+      name: 'Sales & Consulting', description: "Link to page",
       callToAction: function whatTheFunc() {},
       img: "assets/sales.png"
     }, 
     {
-      name: 'Book List', description: 'the books I read',
+      name: 'Book List', description: 'favorites',
       callToAction: function funkyBooks() {},
       img: "assets/books.jpeg"
     }, 
