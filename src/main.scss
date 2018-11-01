@@ -86,6 +86,12 @@ CARD
 NAVBAR
 header.component.html
 */
+.wc-header {
+    border-color: black;
+    border-style: solid none solid none;
+    border-width: 5px 0px 5px 0px;
+    // border-top-style: inset;
+}
 .wc-navbar {
     // background-color: #9e9a75 !important
     background-color: #554840 !important;
@@ -129,6 +135,12 @@ home.component.html > container
     // padding: 4rem 0.5rem;
 }
 
+/****** FOOTER ******/
+.wc-footer {
+    border-color: black;
+    border-style: solid none solid none;
+    border-width: 5px 0px 5px 0px;
+}
 .wc-footer-color {
     background-color: #554840 !important;
 }
@@ -137,10 +149,10 @@ home.component.html > container
     background-color: #002500;
     color: black;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 6px;
     border-color: black;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .footer {
