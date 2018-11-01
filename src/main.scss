@@ -124,6 +124,7 @@ home.component.html > container
 .wc-body-background {
     background-color: #41533b;
     border-radius: 6px;
+    padding-bottom: 11px;
 }
 
 
@@ -132,9 +133,6 @@ home.component.html > container
     height: 75px;
     align-items: center;
     font-style: italic
-    // display: flex;
-    //   flex: 1 0 50%;
-    // padding: 4rem 0.5rem;
 }
 
 /****** FOOTER ******/
@@ -169,15 +167,20 @@ home.component.html > container
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: #efefef;
+    // background-color: #efefef;
     text-align: center;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+// * {
+//     margin: 0;
+//     padding: 0;
+// }
+
+// *,
+// *:before,
+// *:after {
+//   box-sizing: inherit;
+// }
 
 
 html {
@@ -191,7 +194,8 @@ body {
     // font-family: Tahoma, Geneva, sans-serif;
     position: relative;
     margin: 0;
-    padding-bottom: 6rem;
+    padding: 0;
+    // padding-bottom: 6rem;
     min-height: 100%;
 }
 
@@ -202,3 +206,12 @@ body {
 //     padding-bottom: 6rem;
 //     min-height: 100%;
 // }
+
+.wrap {
+    height: auto;
+    margin: 0 auto -80px; /* footer height + space */
+    min-height: 100%;
+    padding: 0 0 80px; /* footer height + space */
+    box-sizing: border-box;
+    overflow: auto;
+}
