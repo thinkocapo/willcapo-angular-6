@@ -86,6 +86,13 @@ CARD
 NAVBAR
 header.component.html
 */
+.wc-header {
+    border-color: black;
+    border-style: solid none solid none;
+    border-width: 5px 0px 5px 0px;
+    border-radius: 6px;
+    // border-top-style: inset;
+}
 .wc-navbar {
     // background-color: #9e9a75 !important
     background-color: #554840 !important;
@@ -116,6 +123,8 @@ home.component.html > container
 */
 .wc-body-background {
     background-color: #41533b;
+    border-radius: 6px;
+    padding-bottom: 11px;
 }
 
 
@@ -124,11 +133,15 @@ home.component.html > container
     height: 75px;
     align-items: center;
     font-style: italic
-    // display: flex;
-    //   flex: 1 0 50%;
-    // padding: 4rem 0.5rem;
 }
 
+/****** FOOTER ******/
+.wc-footer {
+    border-color: black;
+    border-style: solid none solid none;
+    border-width: 5px 0px 5px 0px;
+    border-radius: 6px;
+}
 .wc-footer-color {
     background-color: #554840 !important;
 }
@@ -137,34 +150,68 @@ home.component.html > container
     background-color: #002500;
     color: black;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 6px;
     border-color: black;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .footer {
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
+    // line-height: 60px;
+    // background-color: #f5f5f5;
     position: absolute;
+    right: 0;
     bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
+    left: 0;
+    padding: 1rem;
+    // background-color: #efefef;
+    text-align: center;
 }
 
-
-// .pointer {
-// }
-// .p1 {
-    // position: relative;
+// * {
+//     margin: 0;
+//     padding: 0;
 // }
 
-.body {
-    margin-bottom: 60px;
+// *,
+// *:before,
+// *:after {
+//   box-sizing: inherit;
+// }
+
+
+html {
+    height: 100%;
+    box-sizing: border-box;
 }
 
 // Web-safe fonts https://www.w3schools.com/cssref/css_websafe_fonts.asp
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     // font-family: Tahoma, Geneva, sans-serif;
-  }
+    position: relative;
+    margin: 0;
+    padding: 0;
+    // padding-bottom: 6rem;
+    min-height: 100%;
+}
+
+
+// .body {
+//     position: relative;
+//     margin: 0;
+//     padding-bottom: 6rem;
+//     min-height: 100%;
+// }
+
+.wrap {
+    height: auto;
+    margin: 0 auto -80px; /* footer height + space */
+    min-height: 100%;
+    padding: 0 0 80px; /* footer height + space */
+    box-sizing: border-box;
+    overflow: auto;
+}
