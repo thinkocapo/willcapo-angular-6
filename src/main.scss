@@ -90,6 +90,7 @@ header.component.html
     border-color: black;
     border-style: solid none solid none;
     border-width: 5px 0px 5px 0px;
+    border-radius: 6px;
     // border-top-style: inset;
 }
 .wc-navbar {
@@ -122,6 +123,7 @@ home.component.html > container
 */
 .wc-body-background {
     background-color: #41533b;
+    border-radius: 6px;
 }
 
 
@@ -140,6 +142,7 @@ home.component.html > container
     border-color: black;
     border-style: solid none solid none;
     border-width: 5px 0px 5px 0px;
+    border-radius: 6px;
 }
 .wc-footer-color {
     background-color: #554840 !important;
@@ -156,27 +159,46 @@ home.component.html > container
 }
 
 .footer {
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
+    // line-height: 60px;
+    // background-color: #f5f5f5;
     position: absolute;
+    right: 0;
     bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 
-// .pointer {
-// }
-// .p1 {
-    // position: relative;
-// }
-
-.body {
-    margin-bottom: 60px;
+html {
+    height: 100%;
+    box-sizing: border-box;
 }
 
 // Web-safe fonts https://www.w3schools.com/cssref/css_websafe_fonts.asp
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     // font-family: Tahoma, Geneva, sans-serif;
-  }
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+}
+
+
+// .body {
+//     position: relative;
+//     margin: 0;
+//     padding-bottom: 6rem;
+//     min-height: 100%;
+// }
