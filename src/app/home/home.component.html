@@ -10,9 +10,10 @@
 
   <div class="row">
     <div id="wc-card-container" class="col-xs-12 parent justify-content-center">
-        <p id="p2">Hello World!</p>
-        <div id="yellow-square" class="yellow-square"></div>
+        
+        <!-- <div id="yellow-square" class="yellow-square"></div> -->
         <div id="red-square" class="red-square">I am red</div>
+        
         <div id="wc-card" 
           *ngFor="let card of cards"
           (click)="handleClick(card.callToAction)"
