@@ -32,6 +32,21 @@ export class HomeComponent implements OnInit {
    * Definition. In marketing, a call to action (CTA) is an instruction to the audience designed to provoke an immediate response, usually using an imperative verb such as "call now", "find out more" or "visit a store today".
    */
   ngOnInit() {
+    document.getElementById("p2").style.color = "blue";
+    function moveListener(event: any) {
+      // console.log('clientX: ' + event.clientX);
+      // console.log('clientY: ' + event.clientY);
+      document.getElementById('red-square').style.position = 'absolute'
+      document.getElementById('red-square').style.left = event.pageX + 200
+      document.getElementById('red-square').style.right = event.pageY + 200
+      document.getElementById('red-square').style.color = 'yellow'
+
+      console.log('EVENT', event.pageX)
+      // console.log('EVENT', event.pageY)
+
+    }
+    document.addEventListener('mousemove', moveListener);
+  
     this.reduxService.connect('reducerStyles')(this.onReduxUpdate)
 
     this.cards = [
