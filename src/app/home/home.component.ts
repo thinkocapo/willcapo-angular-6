@@ -3,6 +3,8 @@ import { ReduxService } from '@app/services/redux.service'
 // import { QuoteService } from './quote.service';
 
 import { Card } from '../models/card.model'
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-home',
@@ -32,6 +34,8 @@ export class HomeComponent implements OnInit {
    * Definition. In marketing, a call to action (CTA) is an instruction to the audience designed to provoke an immediate response, usually using an imperative verb such as "call now", "find out more" or "visit a store today".
    */
   ngOnInit() {
+    /* ATTEMPT 3 */
+    console.log("$ JQUERY", $)
     
     /* ATTEMPT 2
     https://coursesweb.net/javascript/follow-mouse-cursor-div-inside-parent_cs
