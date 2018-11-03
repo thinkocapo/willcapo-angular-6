@@ -4,14 +4,23 @@
 
   <div class="row">
     <div id="wc-card-container" class="col-xs-12 parent justify-content-center">
-      <div class="col-12 text-center" style="z-index: 1;">
+      <!-- <div class="col-12 text-center" style="z-index: 1;">
         <h5 id="wc-quote">Some see life as events on a linear graph. I see life as a journey like Starfox 64</h5>
-      </div>
+      </div> -->
 
       <!-- Mouse Circle Magnifying Glass -->
       <div id="wc-mouse-circle"></div>
 
-      <div id="wc-card" 
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="assets/travel-truro.jpg" alt="Card image cap">
+        <!-- <img class="card-img-top" src="assets/sales.png" alt="Card image cap"> -->
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+
+      <!-- <div id="wc-card" 
         *ngFor="let card of cards"
         (click)="handleClick(card.callToAction)"
         class="card wc-card-position wc-card-style text-center">
@@ -25,7 +34,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
   </div>   
 </div>
