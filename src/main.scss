@@ -42,6 +42,8 @@
 CARD
 ******/
 #wc-card-container {
+    // position: relative; // mouse
+    
     // padding-left: 38px;
     // padding-right: 38px;
 }
@@ -125,6 +127,7 @@ home.component.html > container
     background-color: #41533b;
     border-radius: 6px;
     padding-bottom: 11px;
+    // position: relative; // mOUSE
 }
 
 

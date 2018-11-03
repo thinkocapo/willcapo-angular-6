@@ -32,11 +32,13 @@ export class HomeComponent implements OnInit {
    * Definition. In marketing, a call to action (CTA) is an instruction to the audience designed to provoke an immediate response, usually using an imperative verb such as "call now", "find out more" or "visit a store today".
    */
   ngOnInit() {
-    // Here get the Div that you want to follow the mouse
+    
+    /* ATTEMPT 2
+    https://coursesweb.net/javascript/follow-mouse-cursor-div-inside-parent_cs
     var div_moving = document.getElementById('div_moving');
-
-    // Here add the ID of the parent element
-    var parent_div = 'parent_div';
+    // var parent_div = 'parent_div';
+    // var parent_div = 'wc-card-container';
+    var parent_div = 'wc-body-background';
 
     var movingDiv = {
       mouseXY: {},  // will contain the X, Y mouse coords inside its parent
@@ -83,11 +85,12 @@ export class HomeComponent implements OnInit {
     };
     document.getElementById(parent_div).addEventListener('mousemove', function(e){
       var mouseXY = movingDiv.getCoords(e);
-      div_moving.style.left = mouseXY.xp + 8 +'px';
-      div_moving.style.top = mouseXY.yp - 8 +'px';
+      div_moving.style.left = mouseXY.xp + 1 +'px';
+      div_moving.style.top = mouseXY.yp - 1 +'px';
     })
-
     /*
+
+    /* ATTEMPT 1
     function moveListener(event: any) {
       // console.log('clientX: ' + event.screenX); // screenX, clientX, pageX, 0.5em, 20px
       // console.log('clientY: ' + event.clientY);
