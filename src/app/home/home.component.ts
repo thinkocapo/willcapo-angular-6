@@ -34,19 +34,18 @@ export class HomeComponent implements OnInit {
    * Definition. In marketing, a call to action (CTA) is an instruction to the audience designed to provoke an immediate response, usually using an imperative verb such as "call now", "find out more" or "visit a store today".
    */
   ngOnInit() {
+
+    // https://stackoverflow.com/questions/21269206/jquery-receives-empty-values-from-div-tags-on-mouseover-event
     $("#wc-card-container").hover(function() {
     }, function() {
     }).on("mousemove", function(e) {
       var mouseCircle = document.getElementById('wc-mouse-circle');
       const originalEvent: any = e.originalEvent
-      mouseCircle.style.left = originalEvent.clientX + 0 +'px';
-      mouseCircle.style.top = originalEvent.clientY + 0 +'px';
+      mouseCircle.style.left = (originalEvent.clientX - 26) + 'px';
+      mouseCircle.style.top = (originalEvent.clientY - 26) +'px';
 
     });
     
-    
-
-
     this.reduxService.connect('reducerStyles')(this.onReduxUpdate)
     this.cards = [
     {

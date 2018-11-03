@@ -42,13 +42,8 @@
 CARD
 ******/
 #wc-card-container {
-    // position: relative; // mouse
-    
-    // padding-left: 38px;
-    // padding-right: 38px;
+    cursor: none;
 }
-
-
 // by id selector because only 1 place used
 #wc-card {
     // border-color: black !important;
@@ -132,10 +127,12 @@ home.component.html > container
 
 
 #wc-quote {
-    padding-top: 10px;
-    height: 75px;
-    align-items: center;
-    font-style: italic
+    // padding-top: 10px;
+    // height: 75px;
+    // align-items: center;
+    margin: 36px;
+    font-style: italic;
+    z-index: 1;
 }
 
 /****** FOOTER ******/
