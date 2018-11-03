@@ -41,8 +41,9 @@ export class HomeComponent implements OnInit {
     }).on("mousemove", function(e) {
       var mouseCircle = document.getElementById('wc-mouse-circle');
       const originalEvent: any = e.originalEvent
-      mouseCircle.style.left = originalEvent.clientX + 0 +'px';
-      mouseCircle.style.top = originalEvent.clientY + 0 +'px';
+      console.log('org event', originalEvent.clientX, originalEvent.clientY)
+      mouseCircle.style.left = (originalEvent.clientX - 26) + 'px';
+      mouseCircle.style.top = (originalEvent.clientY - 26) +'px';
 
     });
     
