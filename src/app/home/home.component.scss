@@ -23,20 +23,12 @@ q {
   flex-wrap: wrap;
 }
 
-/*
-#604439 brown
-#9e9a75 tan
-#1c222e black
-#41533b green
-#554840 brown-grey
-*/
-
 #wc-mouse-circle {
   position: absolute;
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   margin: 0;;
-  border: 1px solid grey;
-  // background: #88ee99;
+  border: 5px solid black;
   border-radius: 64px;
+  // z-index: 1;
 }

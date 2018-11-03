@@ -132,10 +132,12 @@ home.component.html > container
 
 
 #wc-quote {
-    padding-top: 10px;
-    height: 75px;
-    align-items: center;
-    font-style: italic
+    // padding-top: 10px;
+    // height: 75px;
+    // align-items: center;
+    margin: 36px;
+    font-style: italic;
+    z-index: 1;
 }
 
 /****** FOOTER ******/
