@@ -68,13 +68,26 @@ CARD
 .wc-card-img {
     // height: 75%;
     // width: 75%;
+
+    // height: auto;
+    // width: 75%;
+
+    max-height: 100%;
+    max-width: 100%;
+    
     border-radius: 3.0rem 3.0rem 0 0;
 }
 
 .card {
-    // height: 75%;
-    // width: 75%;
+    max-height: 250px;
+    // max-width: 75%;
     border-radius: 3.25rem !important;
+}
+.card-body {
+    max-height: 50%;
+    // max-width: 100%;
+    // width: auto;
+    // height: auto;
 }
 // .wc-card-button {
 //     background-color: #FF6700; // TEST THIS...implement somewhere

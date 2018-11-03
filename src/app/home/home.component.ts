@@ -71,29 +71,29 @@ export class HomeComponent implements OnInit {
         console.log('this will call a redux Action to update the color palette', this)
       },
       // img: "assets/palette.png"
-      img: "assets/t4.jpg"
+      img: "assets/ta.jpg"
     }, 
     {
       name: 'Apply Picture', description: 'background photo, reset',
       callToAction: function picturizeFunc() {},
       // img: "assets/camera.jpeg"
-      img: "assets/t5.jpg"
+      img: "assets/tb.jpg"
     }, 
     {
       name: 'Sales & Consulting', description: "Link to page",
       callToAction: function whatTheFunc() {},
       // img: "assets/sales.png"
-      img: "assets/t6.jpg"
+      img: "assets/tc.jpg"
     }, 
     {
       name: 'Book List', description: 'favorites',
       callToAction: function funkyBooks() {},
-      img: "assets/t7.jpg"
+      img: "assets/td.jpg"
     }, 
     {
       name: 'How This Works', description: 'the code behind this site',
       callToAction: function funkyFunc() {},
-      img: "assets/how-this-works.png"
+      img: "assets/te.jpg"
     }]
     
     this.isLoading = true;

@@ -13,13 +13,16 @@
 
       <div *ngFor="let card of cards"
       (click)="handleClick(card.callToAction)" class="card" style="width: 18rem;">
+        
         <img class="card-img-top wc-card-img" [src]="card.img" alt="Card image cap">
+        
         <div class="card-body">
           <div class="wc-card-title-text">
             <h5 class="card-title">card.name</h5>
             <p class="card-text">the card.description is big</p>
           </div>
         </div>
+
       </div>
 
 
