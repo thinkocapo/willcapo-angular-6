@@ -56,34 +56,39 @@ export class HomeComponent implements OnInit {
     {
       name: 'Music', description: 'videos and music',
       callToAction: function playFunkyMusic() {},
-      img: "assets/music.png"
+      // img: "assets/music.png"
+      img: "assets/t2.jpg"
     }, 
     {
       name: 'Writings', description: 'pieces written',
       callToAction: function loadWritingsFunc() {},
-      img: "assets/writing.png"
+      // img: "assets/writing.png"
+      img: "assets/t3.jpg"
     }, 
     {
       name: 'Apply Color', description: 'colorize willcapo.com, reset',
       callToAction: function colorizeFunc() {
         console.log('this will call a redux Action to update the color palette', this)
       },
-      img: "assets/palette.png"
+      // img: "assets/palette.png"
+      img: "assets/t4.jpg"
     }, 
     {
       name: 'Apply Picture', description: 'background photo, reset',
       callToAction: function picturizeFunc() {},
-      img: "assets/camera.jpeg"
+      // img: "assets/camera.jpeg"
+      img: "assets/t5.jpg"
     }, 
     {
       name: 'Sales & Consulting', description: "Link to page",
       callToAction: function whatTheFunc() {},
-      img: "assets/sales.png"
+      // img: "assets/sales.png"
+      img: "assets/t6.jpg"
     }, 
     {
       name: 'Book List', description: 'favorites',
       callToAction: function funkyBooks() {},
-      img: "assets/books.jpeg"
+      img: "assets/t7.jpg"
     }, 
     {
       name: 'How This Works', description: 'the code behind this site',
