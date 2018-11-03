@@ -51,44 +51,49 @@ export class HomeComponent implements OnInit {
     {
       name: 'Travel', description: 'photo albums',
       callToAction: function travelFunc() {},
-      img: "assets/travel.jpeg"
+      img: "assets/travel-truro.jpg"
     }, 
     {
       name: 'Music', description: 'videos and music',
       callToAction: function playFunkyMusic() {},
-      img: "assets/music.png"
+      // img: "assets/music.png"
+      img: "assets/t2.jpg"
     }, 
     {
       name: 'Writings', description: 'pieces written',
       callToAction: function loadWritingsFunc() {},
-      img: "assets/writing.png"
+      // img: "assets/writing.png"
+      img: "assets/t3.jpg"
     }, 
     {
-      name: 'Apply Color', description: 'colorize willcapo.com, reset',
+      name: 'Apply Color', description: 'colorize this web page',
       callToAction: function colorizeFunc() {
         console.log('this will call a redux Action to update the color palette', this)
       },
-      img: "assets/palette.png"
+      // img: "assets/palette.png"
+      img: "assets/ta.jpg"
     }, 
     {
       name: 'Apply Picture', description: 'background photo, reset',
       callToAction: function picturizeFunc() {},
-      img: "assets/camera.jpeg"
+      // img: "assets/camera.jpeg"
+      img: "assets/tb.jpg"
     }, 
     {
       name: 'Sales & Consulting', description: "Link to page",
       callToAction: function whatTheFunc() {},
-      img: "assets/sales.png"
+      // img: "assets/sales.png"
+      img: "assets/tc.jpg"
     }, 
     {
       name: 'Book List', description: 'favorites',
       callToAction: function funkyBooks() {},
-      img: "assets/books.jpeg"
+      img: "assets/td.jpg"
     }, 
     {
       name: 'How This Works', description: 'the code behind this site',
       callToAction: function funkyFunc() {},
-      img: "assets/how-this-works.png"
+      img: "assets/te.jpg"
     }]
     
     this.isLoading = true;

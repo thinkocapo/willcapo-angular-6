@@ -66,39 +66,13 @@ CARD
     padding-top: 17px;
 }
 .wc-card-img {
-    // height: 75%;
-    // width: 75%;
-
-    // height: auto;
-    // width: 75%;
-
-    max-height: 100% !important;
-    max-width: 100% !important;
-    // border-radius: 0.0rem;
-
-    margin-top: -17px;
-    border-radius: 3.25rem 3.25rem 0 0;
+    height: 50%;
+    width: 50%;
+    border-radius: 9px;
 }
 
 .card {
-    max-height: 250px;
-    // max-width: 75%;
     border-radius: 3.25rem !important;
-    border-style: solid;
-    border-width: 5px;
-    // border-color: #dfa943; // *
-}
-.card-body {
-    max-height: 100% !important;
-    max-width: 100% !important;
-
-    // width: auto;
-    // height: auto;
-
-    padding-top: 5px;
-}
-.card-title {
-    margin-bottom: 3px;
 }
 // .wc-card-button {
 //     background-color: #FF6700; // TEST THIS...implement somewhere
