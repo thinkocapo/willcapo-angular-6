@@ -40,7 +40,7 @@
 CARD
 ******/
 #wc-card-container {
-    cursor: none;
+    // cursor: default;
     max-width: 75%;
 }
 // by id selector because only 1 place used
@@ -105,8 +105,7 @@ CARD
 // }
 
 /*
-NAVBAR
-header.component.html
+NAVBAR header.component.html
 */
 .wc-header {
     border-color: black;
@@ -137,6 +136,9 @@ header.component.html
     // text-align: center;
     width: 225px;
 }
+// .navbar-brand:hover { // didn't work
+//     cursor: pointer !important;
+// }
 
 /*
 BACKGROUND
@@ -147,7 +149,6 @@ home.component.html > container
     background-color: #41533b;
     border-radius: 6px;
     padding-bottom: 11px;
-    // position: relative; // mOUSE
 }
 
 
@@ -223,9 +224,6 @@ body {
 }
 
 
-// .wc-mouse-circle {
-
-// }
 // .wc-mouse-circle:hover {
     // cursor: copy;
     // z-index: -1;
