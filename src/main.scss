@@ -203,28 +203,3 @@ body {
     // z-index: -1;
     // background-color: white !important;
 // }
-
-// .yellow-square {
-    // border-radius: 10px;
-    // border: 3px solid #BADA55;
-    // width: 200px;
-    // height: 200px;
-    // z-index: 1;
-    // position: relative;
-//   }
-
-  .red-square {
-    // border-radius: 10px;
-    // border: 3px solid red;
-    // background-color: red;
-    // width: 300px;
-    // height: 200px;
-    // z-index: 1;
-    // position: relative;
-    position: absolute; // fixed relative absolute sticky static
-    // right: 100px;
-    // top: 50px;
-  }
-
-  #red-square{ background: black; width: 128px; height: 128px; border-radius: 64px; border: 2px solid orange; }
-//   #red-square div { position:relative; left: 19px; top: 19px; width: 90px; height: 90px; color: white; text-align:center; }
