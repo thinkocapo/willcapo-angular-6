@@ -35,7 +35,33 @@ export class HomeComponent implements OnInit {
    */
   ngOnInit() {
     /* ATTEMPT 3 */
-    console.log("$ JQUERY", $)
+    $("#wc-card-container").hover(function() {
+      console.log("HOVERING", $)
+
+
+
+    }, function() {
+      
+    }).on("mousemove", function(e) {
+      console.log("MOUSE MOVING", e)
+      var div_moving = document.getElementById('div_moving');
+      
+      
+      // const { offsetHeight, offsetWidth } = e.target
+      // console.log("OFFSETS...", offsetHeight, offsetWidth)
+      // e.originalEvent originalMousee
+      // div_moving.style.left = offsetWidth + 1 +'px';
+      // div_moving.style.top = offsetHeight - 1 +'px';
+      
+      const originalEvent: any = e.originalEvent
+      console.log("ORIGINAL EVENT", e)
+      console.log("ORIGINAL EVENT X", e.clientX)
+      console.log("ORIGINAL EVENT Y", e.clientY)
+
+      div_moving.style.left = originalEvent.clientX + 0 +'px';
+      div_moving.style.top = originalEvent.clientY + 0 +'px';
+
+    });
     
     /* ATTEMPT 2
     https://coursesweb.net/javascript/follow-mouse-cursor-div-inside-parent_cs
