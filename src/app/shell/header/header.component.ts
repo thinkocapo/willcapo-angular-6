@@ -11,7 +11,8 @@ import { AuthenticationService, I18nService } from '@app/core';
 export class HeaderComponent implements OnInit {
 
   menuHidden = true;
-
+  languages = ['spanish', 'french']
+  currentLanguage = 'russian'
   constructor(private router: Router,
               private authenticationService: AuthenticationService,
               private i18nService: I18nService) { }
@@ -31,13 +32,13 @@ export class HeaderComponent implements OnInit {
       .subscribe(() => this.router.navigate(['/login'], { replaceUrl: true }));
   }
 
-  get currentLanguage(): string {
-    return this.i18nService.language;
-  }
+  // get currentLanguage(): string {
+  //   return this.i18nService.language;
+  // }
 
-  get languages(): string[] {
-    return this.i18nService.supportedLanguages;
-  }
+  // get languages(): string[] {
+  //   return this.i18nService.supportedLanguages;
+  // }
 
   get username(): string | null {
     const credentials = this.authenticationService.credentials;

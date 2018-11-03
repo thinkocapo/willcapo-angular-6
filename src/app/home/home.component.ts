@@ -12,8 +12,6 @@ import * as $ from 'jquery';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  languages = ['spanish', 'french']
-  currentLanguage = 'russian'
   cards: Card[]
 
   quote: string;
