@@ -30,3 +30,21 @@ q {
 #41533b green
 #554840 brown-grey
 */
+
+
+#parent_div {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  margin: 1em auto;
+  border: 1px solid #333;
+  background: #fefebe;
+}
+#div_moving {
+  position: absolute;
+  width: 140px;
+  height: 65px;
+  margin: 0;;
+  border: 1px solid #33f;
+  background: #88ee99;
+}

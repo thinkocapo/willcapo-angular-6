@@ -32,26 +32,77 @@ export class HomeComponent implements OnInit {
    * Definition. In marketing, a call to action (CTA) is an instruction to the audience designed to provoke an immediate response, usually using an imperative verb such as "call now", "find out more" or "visit a store today".
    */
   ngOnInit() {
-    //https://developer.mozilla.org/en-US/docs/Web/Events/mousemove
+    // Here get the Div that you want to follow the mouse
+    var div_moving = document.getElementById('div_moving');
 
+    // Here add the ID of the parent element
+    var parent_div = 'parent_div';
+
+    var movingDiv = {
+      mouseXY: {},  // will contain the X, Y mouse coords inside its parent
+    
+      // Get X and Y position of the elm (from: vishalsays.wordpress.com/ )
+      getXYpos: function(elm: any) {
+        var x = elm.offsetLeft;        // set x to elm’s offsetLeft
+        var y = elm.offsetTop;         // set y to elm’s offsetTop
+    
+        elm = elm.offsetParent;    // set elm to its offsetParent
+    
+        //use while loop to check if elm is null
+        // if not then add current elm’s offsetLeft to x, offsetTop to y and set elm to its offsetParent
+        while(elm != null) {
+          x = parseInt(x) + parseInt(elm.offsetLeft);
+          y = parseInt(y) + parseInt(elm.offsetTop);
+          elm = elm.offsetParent;
+        }
+    
+        // returns an object with "xp" (Left), "=yp" (Top) position
+        return {'xp':x, 'yp':y};
+      },
+      // Returns object with X, Y coords inside its parent
+      getCoords: function(e: any) {
+        var xy_pos = this.getXYpos(e.target);
+
+        // if IE
+        if(navigator.appVersion.indexOf("MSIE") != -1) {
+          var standardBody = (document.compatMode == 'CSS1Compat') ? document.documentElement : document.body;
+
+          var x = e.clientX + standardBody.scrollLeft;
+          var y = e.clientY + standardBody.scrollTop;
+        }
+        else {
+          x = e.pageX;
+          y = e.pageY;
+        }
+
+        x = x - xy_pos['xp'];
+        y = y - xy_pos['yp'];
+
+        return {'xp':x, 'yp':y};
+        }
+    };
+    document.getElementById(parent_div).addEventListener('mousemove', function(e){
+      var mouseXY = movingDiv.getCoords(e);
+      div_moving.style.left = mouseXY.xp + 8 +'px';
+      div_moving.style.top = mouseXY.yp - 8 +'px';
+    })
+
+    /*
     function moveListener(event: any) {
       // console.log('clientX: ' + event.screenX); // screenX, clientX, pageX, 0.5em, 20px
       // console.log('clientY: ' + event.clientY);
-
       document.getElementById('red-square').style.left = event.pageX + '20px'
       // document.getElementById('red-square').style.bottom = event.pageY + '20px'
-
       // document.getElementById('red-square').style.right = event.pageY + '20px'
       // document.getElementById('red-square').style.color = 'yellow'
-
       // console.log('EVENT', event.pageX)
-      // console.log('EVENT', event.pageY)
-
     }
     document.addEventListener('mousemove', moveListener);
-  
-    this.reduxService.connect('reducerStyles')(this.onReduxUpdate)
+    */
 
+
+
+    this.reduxService.connect('reducerStyles')(this.onReduxUpdate)
     this.cards = [
     {
       name: 'Travel', description: 'photo albums',
