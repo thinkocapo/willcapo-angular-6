@@ -4,29 +4,15 @@
 
   <div class="row">
     <div id="wc-card-container" class="col-xs-12 parent justify-content-center">
-      <!-- <div class="col-12 text-center" style="z-index: 1;">
+      <div class="col-12 text-center" style="z-index: 1;">
         <h5 id="wc-quote">Some see life as events on a linear graph. I see life as a journey like Starfox 64</h5>
-      </div> -->
+      </div>
 
       <!-- Mouse Circle Magnifying Glass -->
       <div id="wc-mouse-circle"></div>
 
-      <div *ngFor="let card of cards"
-      (click)="handleClick(card.callToAction)" class="card" style="width: 18rem;">
-        
-        <img class="card-img-top wc-card-img" [src]="card.img" alt="Card image cap">
-        
-        <div class="card-body">
-          <div class="wc-card-title-text">
-            <h5 class="card-title">card.name</h5>
-            <p class="card-text">the card.description is big</p>
-          </div>
-        </div>
-
-      </div>
-
-
-      <!-- <div id="wc-card" 
+      <!--  Card -->
+      <div id="wc-card" 
         *ngFor="let card of cards"
         (click)="handleClick(card.callToAction)"
         class="card wc-card-position wc-card-style text-center" style="width: 18rem">
@@ -40,42 +26,7 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
   </div>   
 </div>
-
-
-<!-- EXAMPLE
-      <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-      </div>
--->
-      
-
-                    <!-- <div class="row">
-                <div class="col-12 justify-content-center">
-                    <img class="card-img-top wc-card-img" src="assets/ngx-rocket-logo.png" alt="Card image cap">
-                </div>
-              </div> -->
-<!-- <a href="#" class="btn btn-primary wc-card-button">Go somewhere</a> -->
-
-  <!-- [ngClass]="{ 'left-style': i%2 === 0, 'right-style': i%2 !== 0 }"    -->
-
-
-  <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-
-
-  <!-- <div class="jumbotron text-center">
-    <h1>
-      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo"/>
-      <span translate>Hello world !</span>
-    </h1>
-    <app-loader [isLoading]="isLoading"></app-loader>
-    <q [hidden]="isLoading">{{quote}}</q>
-  </div> -->

@@ -66,7 +66,7 @@ export class HomeComponent implements OnInit {
       img: "assets/t3.jpg"
     }, 
     {
-      name: 'Apply Color', description: 'colorize willcapo.com, reset',
+      name: 'Apply Color', description: 'colorize this web page',
       callToAction: function colorizeFunc() {
         console.log('this will call a redux Action to update the color palette', this)
       },
