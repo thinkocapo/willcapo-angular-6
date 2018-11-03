@@ -4,9 +4,32 @@
     <!-- Is Hamburger Menu when you collapse/minimize the window - WC -->
     <button class="navbar-toggler" type="button" aria-controls="navbar-menu"
             aria-label="Toggle navigation" (click)="toggleMenu()" [attr.aria-expanded]="!menuHidden">
-      <!-- <a class="navbar-brand" href="https://github.com/ngx-rocket" translate>WC</a>     -->
+      
+      <!-- <a class="navbar-brand" href="https://github.com/ngx-rocket" translate>MENU</a>     -->
+      <a class="navbar-brand" translate>MENU</a>
+      
+      <!-- NOT WORKING, maybe because container in the way? -->
+      <!-- https://getbootstrap.com/docs/4.0/components/navbar/ -->
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          MENU-DROPDOWN
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> -->
+      
+      <!-- <a class="navbar-brand" translate>RESUME</a>
+      <a class="navbar-brand" translate>FHIR</a>
+      <a class="navbar-brand" translate>BLOCKCHAIN</a>
+      <a class="navbar-brand" translate>CODE</a> -->
+
+
       <!-- <span class="navbar-toggler-icon"></span> -->
-      RESUME FHIR BLOCKCHAIN GITHUB/CODE
+      <!-- RESUME FHIR BLOCKCHAIN GITHUB/CODE -->
     </button>
 
 
@@ -18,7 +41,7 @@
           <span translate>RESUME</span>
         </a>
         <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
-          <span translate>FHIR22</span>
+          <span translate>FHIR</span>
         </a>
 
         <a *ngIf="menuHidden" class="nav-item wc-nav-app-name nav-link text-uppercase text-center" routerLink="/home" routerLinkActive="active">
