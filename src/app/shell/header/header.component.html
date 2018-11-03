@@ -4,8 +4,9 @@
     <!-- Is Hamburger Menu when you collapse/minimize the window - WC -->
     <button class="navbar-toggler" type="button" aria-controls="navbar-menu"
             aria-label="Toggle navigation" (click)="toggleMenu()" [attr.aria-expanded]="!menuHidden">
-      <a class="navbar-brand" href="https://github.com/ngx-rocket" translate>WC</a>    
-      <span class="navbar-toggler-icon"></span>
+      <!-- <a class="navbar-brand" href="https://github.com/ngx-rocket" translate>WC</a>     -->
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      RESUME FHIR BLOCKCHAIN GITHUB/CODE
     </button>
 
 
@@ -17,10 +18,10 @@
           <span translate>RESUME</span>
         </a>
         <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
-          <span translate>FHIR</span>
+          <span translate>FHIR22</span>
         </a>
 
-        <a class="nav-item wc-nav-app-name nav-link text-uppercase text-center" routerLink="/home" routerLinkActive="active">
+        <a *ngIf="menuHidden" class="nav-item wc-nav-app-name nav-link text-uppercase text-center" routerLink="/home" routerLinkActive="active">
           <span class="wc-nav-text-color" bg-success translate>APP_NAME</span>
         </a>
 
