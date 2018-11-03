@@ -66,12 +66,14 @@ CARD
     padding-top: 17px;
 }
 .wc-card-img {
-    height: 100%;
-    width: 100%;
-    border-radius: 9px;
+    height: 75%;
+    width: 75%;
+    border-radius: 3.0rem 3.0rem 0 0;
 }
 
 .card {
+    // height: 75%;
+    // width: 75%;
     border-radius: 3.25rem !important;
 }
 // .wc-card-button {

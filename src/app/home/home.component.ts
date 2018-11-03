@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
     {
       name: 'Travel', description: 'photo albums',
       callToAction: function travelFunc() {},
-      img: "assets/travel-truro.jpeg"
+      img: "assets/travel-truro.jpg"
     }, 
     {
       name: 'Music', description: 'videos and music',
