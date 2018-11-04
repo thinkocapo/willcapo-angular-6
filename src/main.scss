@@ -175,7 +175,6 @@
 .footer {
     position: absolute;
     right: 0;
-    // bottom: 0;
     bottom: -11px;
     left: 0;
     padding: 1rem;
@@ -215,8 +214,8 @@ body {
     padding-bottom: 11px;
 }
 .wc-expand {
-    // position: absolute;
-    // height: 100%;
+    position: absolute;
+    height: 100%;
 }
 
 
