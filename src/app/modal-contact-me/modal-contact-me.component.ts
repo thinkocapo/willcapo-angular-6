@@ -22,11 +22,10 @@ export class ModalContactMeComponent implements OnInit {
   ngOnInit() {
     this.reduxService.connect('reducerStyles')(this.onReduxUpdate)
 
-    console.log('* MODAL CONTACT ME *')
-
     setTimeout(() => {
       this.modalService.open(this.modalContactMeRef, {ariaLabelledBy: 'modal-basic-title', size: 'lg'}).result.then((result: any) => {
         // this.closeResult = `Closed with: ${result}`;
+        this.reduxService.action(MODAL_CONTACT_ME, false)
       }, (reason: any) => {
         // console.log('reason', reason)
         this.reduxService.action(MODAL_CONTACT_ME, false)
@@ -38,10 +37,9 @@ export class ModalContactMeComponent implements OnInit {
 
   }
 
+  onReduxUpdate() {}
+
   // getDismissReason(reason: any) {
 
   // }
-
-  onReduxUpdate() {}
-
 }
