@@ -7,3 +7,15 @@
 .nav-link.dropdown-toggle {
   cursor: pointer;
 }
+
+.mini-nav-item {
+  float: left;
+  // width: 33%;
+  // border: 1px solid #000;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.no-border {
+  border-style: none;
+}

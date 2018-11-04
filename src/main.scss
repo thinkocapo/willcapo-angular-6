@@ -1,6 +1,7 @@
 /*
  * Entry point of global application style.
  * Component-specific style should not go here and be included directly as part of the components.
+ * Web-safe fonts https://www.w3schools.com/cssref/css_websafe_fonts.asp
  */
 
 // Theme variables, must be included before the libraries to allow overriding defaults
@@ -12,15 +13,10 @@
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fa-brands.scss";
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fa-regular.scss";
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss";
-
-// Theme customization
 @import "theme/theme";
 
-
-// element {
-//     --tan-color: #9e9a75;
-// }
-
+/**** PALETTES ****/
+// Camoflage Palette
 .palette-1 {
     color: #604439; // brown
     color: #9e9a75; // tan
@@ -29,7 +25,7 @@
     color: #554840; // brown grey
     color: #FF6700; // safety orange
 }
-// https://www.color-hex.com/color-palette/5216
+// https://www.color-hex.com/color-palette/5216 Camouflage Palette
 .palette-2 {
     color: #002500; // green
     color: #502500; // brown
@@ -37,16 +33,19 @@
     color: #000000; // black
     color: #aa8060; // peach
 }
+// Soil Color Palette
+// https://www.color-hex.com/color-palette/15769 
+// Caramel Woods Palette
+// https://www.color-hex.com/color-palette/14750
 
-/******
-CARD
-******/
+
+/******** CARD ******/
 #wc-card-container {
-    cursor: none;
+    // cursor: default;
+    max-width: 75%;
 }
 // by id selector because only 1 place used
 #wc-card {
-    // border-color: black !important;
     background-color: #9e9a75 !important;
     cursor: pointer;
     // background-color: #554840 !important
@@ -66,49 +65,37 @@ CARD
     padding-top: 17px;
 }
 .wc-card-img {
-    // height: 75%;
-    // width: 75%;
-
-    // height: auto;
-    // width: 75%;
-
     max-height: 100% !important;
     max-width: 100% !important;
-    // border-radius: 0.0rem;
-
     margin-top: -17px;
-    border-radius: 3.25rem 3.25rem 0 0;
+    border-radius: 3.0rem 3.0rem 0 0; // it was 3.25 but that left a space
+    // height: 75%;
+    // width: 75%;
+    // height: auto;
+    // width: 75%;
 }
 
 .card {
     max-height: 250px;
-    // max-width: 75%;
     border-radius: 3.25rem !important;
     border-style: solid;
     border-width: 5px;
-    // border-color: #dfa943; // *
+    // max-width: 75%;
+    // border-color: #dfa943;
 }
 .card-body {
     max-height: 100% !important;
     max-width: 100% !important;
-
+    padding-top: 5px;
     // width: auto;
     // height: auto;
-
-    padding-top: 5px;
 }
 .card-title {
     margin-bottom: 3px;
 }
-// .wc-card-button {
-//     background-color: #FF6700; // TEST THIS...implement somewhere
-//     border-color: #1c222e;
-// }
 
-/*
-NAVBAR
-header.component.html
-*/
+
+/********** NAVBAR header.component.html ************/
 .wc-header {
     border-color: black;
     border-style: solid none solid none;
@@ -138,30 +125,28 @@ header.component.html
     // text-align: center;
     width: 225px;
 }
+.wc-mobile-mini-menu {
+    text-align: center;
+    color: black;
+    padding-bottom: 3px;
+}
 
-/*
-BACKGROUND
-index.html <html>
-home.component.html > container
-*/
+
+/************ BACKGROUND index.html <html> home.component.html > container ******/
 .wc-body-background {
     background-color: #41533b;
     border-radius: 6px;
     padding-bottom: 11px;
-    // position: relative; // mOUSE
 }
 
 
 #wc-quote {
-    // padding-top: 10px;
-    // height: 75px;
-    // align-items: center;
     margin: 36px;
     font-style: italic;
     z-index: 1;
 }
 
-/****** FOOTER ******/
+/********* FOOTER *********/
 .wc-footer {
     border-color: black;
     border-style: solid none solid none;
@@ -173,13 +158,18 @@ home.component.html > container
 }
 .wc-footer-contact-me {
     font-size: 2em;
-    background-color: #002500;
+    // background-color: #dfa943; // darker, but too dark with opacity filter
+    background-color: #ffb400; // brighter, but ok with opacity filter
     color: black;
     cursor: pointer;
-    border-radius: 6px;
-    border-color: black;
     padding-left: 35px;
     padding-right: 35px;
+    font-weight: 100;
+    filter: opacity(0.3);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 6px;
+    border-color: #3e3117;
 }
 
 .footer {
@@ -188,24 +178,8 @@ home.component.html > container
     bottom: 0;
     left: 0;
     padding: 1rem;
-    // background-color: #efefef;
     text-align: center;
-}
-
-html {
-    height: 100%;
-    box-sizing: border-box;
-}
-
-// Web-safe fonts https://www.w3schools.com/cssref/css_websafe_fonts.asp
-body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    // font-family: Tahoma, Geneva, sans-serif;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    // padding-bottom: 6rem;
-    min-height: 100%;
+    // background-color: #efefef;
 }
 
 .wrap {
@@ -217,12 +191,33 @@ body {
     overflow: auto;
 }
 
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
 
-// .wc-mouse-circle {
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    // font-family: Tahoma, Geneva, sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    // padding-bottom: 6rem;
+}
 
-// }
+
 // .wc-mouse-circle:hover {
     // cursor: copy;
     // z-index: -1;
     // background-color: white !important;
+// }
+
+// .wc-card-button {
+//     background-color: #FF6700; // TEST THIS...implement somewhere
+//     border-color: #1c222e;
+// }
+
+// .navbar-brand:hover { // didn't work
+//     cursor: pointer !important;
 // }

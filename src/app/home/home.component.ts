@@ -12,7 +12,6 @@ import * as $ from 'jquery';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
   cards: Card[]
 
   quote: string;
