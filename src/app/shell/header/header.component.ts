@@ -11,13 +11,17 @@ import { AuthenticationService, I18nService } from '@app/core';
 export class HeaderComponent implements OnInit {
 
   menuHidden = true;
-  languages = ['spanish', 'french']
-  currentLanguage = 'russian'
+  navbarItems = ['RESUME', 'FHIR', 'BLOCKCHAIN', 'CODE']
+  currentNavbarItem = 'MENU'
   constructor(private router: Router,
               private authenticationService: AuthenticationService,
               private i18nService: I18nService) { }
 
   ngOnInit() { }
+
+  selectMenuOption(item: string) {
+    console.log("selectMenuOption", item)
+  }
 
   toggleMenu() {
     this.menuHidden = !this.menuHidden;
