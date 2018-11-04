@@ -23,8 +23,6 @@ export class FooterComponent implements OnInit {
   }
 
   contactMe() {
-    console.log('contactMe...')
-    
     // const theme = { 
     //   footerColorText: "blue",
     //   footerColorBackground: "yellow",
