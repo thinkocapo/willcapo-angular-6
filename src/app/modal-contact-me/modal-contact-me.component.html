@@ -1,0 +1,36 @@
+<ng-template #modalContactMeRef let-modal>
+    <div class="modal-header wc-modal-header-color">
+      <h4 class="modal-title contact-me-text-color" id="modal-basic-title">Contact Me</h4>
+      <!-- <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button> -->
+    </div>
+    <div class="modal-body wc-modal-body-color">
+
+      <form>
+        <div class="form-group">
+
+          <label for="name">Name</label>
+          <div class="input-group">
+            <input id="name" class="form-control" name="dp" ngbDatepicker #dp="ngbDatepicker">
+          </div>
+          <label for="message">Message</label>
+          <div class="input-group">
+              <input id="message" class="form-control">
+          </div>
+          <!-- Make Longer Message Field -->
+
+          <label for="email">Email or Phone</label>
+          <div class="input-group">
+              <input id="email" class="form-control">
+          </div>
+
+          <!-- YOUR IP https://expressjs.com/en/api.html -->
+        </div>
+      </form>
+
+    </div>
+    <div class="modal-footer wc-modal-header-color">
+      <button type="button" class="btn btn-outline-dark contact-me-submit" (click)="modal.close('Save click')">Submit</button>
+    </div>
+</ng-template>

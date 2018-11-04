@@ -9,36 +9,38 @@ import { SET_COLOR_THEME } from '@app/store/actions/actions-styles'
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  showModalContactMe: boolean
 
   constructor(
     private reduxService: ReduxService
   ) {
     this.onReduxUpdate = this.onReduxUpdate.bind(this)
+    this.showModalContactMe = false
   }
 
   ngOnInit() {
-    this.reduxService.connect('reducerStyles')(this.onReduxUpdate)
+    this.reduxService.connect('reducerNavigation')(this.onReduxUpdate)
   }
 
   contactMe() {
-    console.log('contactMe...')
+    // const theme = { 
+    //   footerColorText: "blue",
+    //   footerColorBackground: "yellow",
+    //   navbarColorText: "class-name",
+    //   navbarColorBackground: "ClassName",
+    //   cardColorBackground: "wc-class-name",
+    //   cardColorText: "wc-something-cool",
+    //   siteColorBackground: "another"
+    // }
+    // this.reduxService.action(SET_COLOR_THEME, theme)
     
-    const theme = { 
-      footerColorText: "blue",
-      footerColorBackground: "yellow",
-      navbarColorText: "class-name",
-      navbarColorBackground: "ClassName",
-      cardColorBackground: "wc-class-name",
-      cardColorText: "wc-something-cool",
-      siteColorBackground: "another"
-    }
-    
-    this.reduxService.action(SET_COLOR_THEME, theme)
+    // console.log('contactMe()...', this.showModalContactMe)
+    this.showModalContactMe = true
   }
 
 
   onReduxUpdate(state: any) {
-    console.log('onReduxUpdate: state', state)
+    this.showModalContactMe = state.showModalContactMe
   }
 
 }

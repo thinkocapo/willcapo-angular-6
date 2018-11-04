@@ -1,0 +1,1 @@
+export const MODAL_CONTACT_ME = 'MODAL_CONTACT_ME'
