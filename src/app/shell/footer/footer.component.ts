@@ -19,7 +19,7 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.reduxService.connect('reducerStyles')(this.onReduxUpdate)
+    this.reduxService.connect('reducerNavigation')(this.onReduxUpdate)
   }
 
   contactMe() {
@@ -33,12 +33,14 @@ export class FooterComponent implements OnInit {
     //   siteColorBackground: "another"
     // }
     // this.reduxService.action(SET_COLOR_THEME, theme)
+    
+    // console.log('contactMe()...', this.showModalContactMe)
     this.showModalContactMe = true
   }
 
 
   onReduxUpdate(state: any) {
-    console.log('onReduxUpdate: state', state)
+    this.showModalContactMe = state.showModalContactMe
   }
 
 }
