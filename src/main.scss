@@ -145,12 +145,6 @@
     font-style: italic;
     // z-index: 1;
 }
-.quote-index {
-    z-index: 1;
-}
-.z-index-1 {
-    z-index: 1;
-}
 
 /********* FOOTER *********/
 .wc-footer {
@@ -220,7 +214,17 @@ body {
     border-radius: 6px;
     padding-bottom: 11px;
 }
+.wc-expand {
+    // position: absolute;
+    // height: 100%;
+}
 
+
+
+
+.z-index-1 {
+    z-index: 1;
+}
 
 // .wc-mouse-circle:hover {
     // cursor: copy;
