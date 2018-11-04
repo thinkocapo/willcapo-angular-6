@@ -8,6 +8,8 @@ import { ShellComponent } from './shell.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { ModalContactMeComponent } from '../modal-contact-me/modal-contact-me.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent,
     HeaderComponent,
     ShellComponent,
-    FooterComponent
+    FooterComponent,
+    ModalContactMeComponent
   ]
 })
 export class ShellModule {
