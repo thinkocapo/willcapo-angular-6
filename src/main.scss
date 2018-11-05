@@ -16,7 +16,7 @@
 @import "theme/theme";
 
 /**** PALETTES ****/
-// Camoflage Palette
+// https://www.color-hex.com/color-palette/4575 Camouflage Palette 1
 .palette-1 {
     color: #604439; // brown
     color: #9e9a75; // tan
@@ -25,7 +25,7 @@
     color: #554840; // brown grey
     color: #FF6700; // safety orange
 }
-// https://www.color-hex.com/color-palette/5216 Camouflage Palette
+// https://www.color-hex.com/color-palette/5216 Camouflage Palette 2
 .palette-2 {
     color: #002500; // green
     color: #502500; // brown
@@ -154,7 +154,9 @@
     border-radius: 6px;
 }
 .wc-footer-color {
-    background-color: #554840 !important;
+    // background-color: #554840 !important; // darker brown
+    // background-color: #604439 !important; // ligher brown
+    background-color: #3e3117 !important;
 }
 .wc-footer-contact-me {
     font-size: 2em;
