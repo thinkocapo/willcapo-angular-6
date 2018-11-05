@@ -24,6 +24,8 @@ export class ResumeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    const nationality = document.getElementById('nationality')
+    nationality.scrollIntoView();
   }
 
 }
