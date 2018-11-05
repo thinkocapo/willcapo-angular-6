@@ -116,7 +116,8 @@
     font-size: 24px;
 }
 .wc-nav-text-color {
-    color: #1c222e !important;
+    // color: #1c222e !important;
+    color: #202020 !important;
     font-weight: 900; // normal , lighter, bold, 800
 }
 .wc-nav-app-name {
@@ -143,7 +144,9 @@
 #wc-quote {
     margin: 36px;
     font-style: italic;
-    // z-index: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    z-index: 1;
 }
 
 /********* FOOTER *********/
