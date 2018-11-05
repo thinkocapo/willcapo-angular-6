@@ -8,14 +8,27 @@
   cursor: pointer;
 }
 
-.mini-nav-item {
-  float: left;
-  // width: 33%;
-  // border: 1px solid #000;
-  margin-right: 10px;
-  text-align: center;
-}
-
 .no-border {
   border-style: none;
+}
+
+.mini-nav-item {
+  // original
+  // margin-right: 10px; // put back
+  text-align: center;
+  color: black;
+  border-color: black;
+  border-width: 2px;
+  float: left; // put back
+
+  // update
+  // max-width: fit-content;
+  // margin: 3px 3px 3px 3px;
+
+
+  width: 25%;
+  min-width: fit-content;
+
+  padding-left: 1px;
+  padding-right: 1px;
 }

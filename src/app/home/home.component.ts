@@ -42,7 +42,21 @@ export class HomeComponent implements OnInit {
       const originalEvent: any = e.originalEvent
       mouseCircle.style.left = (originalEvent.clientX - 26) + 'px';
       mouseCircle.style.top = (originalEvent.clientY - 26) +'px';
+    });
 
+    $("#wc-card-container").hover(function() {
+    }, function() {
+    }).on("mouseleave", function(e) {
+      // console.log('MOUSE EXITING *****')
+      var mouseCircle = document.getElementById('wc-mouse-circle');
+      mouseCircle.style.display = "none";
+    });
+
+    $("#wc-card-container").hover(function() {
+    }, function() {
+    }).on("mouseenter", function(e) {
+      var mouseCircle = document.getElementById('wc-mouse-circle');
+      mouseCircle.style.display = "block";
     });
     
     this.reduxService.connect('reducerStyles')(this.onReduxUpdate)
