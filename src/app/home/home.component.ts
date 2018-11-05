@@ -55,7 +55,6 @@ export class HomeComponent implements OnInit {
     $("#wc-card-container").hover(function() {
     }, function() {
     }).on("mouseenter", function(e) {
-      console.log('MOUSE ENTERING ^^^^^^')
       var mouseCircle = document.getElementById('wc-mouse-circle');
       mouseCircle.style.display = "block";
     });
