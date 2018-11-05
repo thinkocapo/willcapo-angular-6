@@ -8,6 +8,10 @@
   cursor: pointer;
 }
 
+.no-border {
+  border-style: none;
+}
+
 .mini-nav-item {
   float: left;
   // width: 33%;
@@ -16,8 +20,4 @@
   text-align: center;
   color: black;
   border-color: black;
-}
-
-.no-border {
-  border-style: none;
 }
