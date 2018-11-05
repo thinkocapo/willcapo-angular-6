@@ -8,16 +8,11 @@ says use Jekyll to convert
 https://medium.freecodecamp.org/style-webpage-or-markdown-like-medium-article-using-html-css-sass-bootstrap-c6f9e64c0955
 
 
-STRAPDOWN  *
-http://strapdownjs.com/
-
-Markdown to HTML Online Converter **
-https://markdowntohtml.com/
+Markdown to HTML Online Converter
+https://markdowntohtml.com/ GREAT
 https://www.browserling.com/tools/markdown-to-html
 https://zapier.com/blog/markdown-html-export/
 */
-
-
 
 @Component({
   selector: 'app-resume',
@@ -32,3 +27,13 @@ export class ResumeComponent implements OnInit {
   }
 
 }
+/**
+ * SECTIONS
+ * 
+ * Blockchain,
+ * Job Titles, Types
+ * MC
+ * Review old resumes
+ * 
+ * Set default sections
+ */
