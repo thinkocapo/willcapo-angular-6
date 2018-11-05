@@ -37,3 +37,7 @@ export class ResumeComponent implements OnInit {
  * 
  * Set default sections
  */
+
+ // todo
+ // hide footer when viewing resume, and scroll/adjust the view.
+ // take away the scrollable?
