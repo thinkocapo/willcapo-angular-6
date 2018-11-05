@@ -16,7 +16,7 @@
 @import "theme/theme";
 
 /**** PALETTES ****/
-// Camoflage Palette
+// https://www.color-hex.com/color-palette/4575 Camouflage Palette 1
 .palette-1 {
     color: #604439; // brown
     color: #9e9a75; // tan
@@ -25,7 +25,7 @@
     color: #554840; // brown grey
     color: #FF6700; // safety orange
 }
-// https://www.color-hex.com/color-palette/5216 Camouflage Palette
+// https://www.color-hex.com/color-palette/5216 Camouflage Palette 2
 .palette-2 {
     color: #002500; // green
     color: #502500; // brown
@@ -41,6 +41,7 @@
 
 /******** CARD ******/
 #wc-card-container {
+    cursor: none;
     // cursor: default;
     max-width: 75%;
 }
@@ -116,7 +117,8 @@
     font-size: 24px;
 }
 .wc-nav-text-color {
-    color: #1c222e !important;
+    // color: #1c222e !important;
+    color: #202020 !important;
     font-weight: 900; // normal , lighter, bold, 800
 }
 .wc-nav-app-name {
@@ -129,6 +131,7 @@
     text-align: center;
     color: black;
     padding-bottom: 3px;
+    font-weight: bold;
 }
 
 
@@ -143,7 +146,9 @@
 #wc-quote {
     margin: 36px;
     font-style: italic;
-    // z-index: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    z-index: 1;
 }
 
 /********* FOOTER *********/
@@ -154,7 +159,9 @@
     border-radius: 6px;
 }
 .wc-footer-color {
-    background-color: #554840 !important;
+    // background-color: #554840 !important; // darker brown
+    // background-color: #604439 !important; // ligher brown
+    background-color: #3e3117 !important;
 }
 .wc-footer-contact-me {
     font-size: 2em;
@@ -209,13 +216,15 @@ body {
 
 /********* PAGES Resume, FHIR, Blockchain, Github/Code *********/
 .wc-page-background {
-    background-color: #dfa943;
+    // background-color: #dfa943;
+    background-color: white;
     border-radius: 6px;
     padding-bottom: 11px;
 }
 .wc-expand {
-    position: absolute;
-    height: 100%;
+    // position: absolute;
+    // height: 100%;
+    //max-height: 600px; // overrides pre-scrollable 340px;
 }
 
 
