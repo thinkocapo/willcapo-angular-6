@@ -9,8 +9,8 @@ import { Shell } from '@app/shell/shell.service';
 const routes: Routes = [
   Shell.childRoutes([
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent, data: { title: extract('Home') } },
-    { path: 'resume', component: ResumeComponent, data: { title: extract('Resume') } }
+    { path: 'home', component: HomeComponent }, // data: { title: extract('Home') } updates browser tab title
+    { path: 'resume', component: ResumeComponent } // data: { title: extract('Resume') } } // updates browser tab title
   ])
 ];
 
