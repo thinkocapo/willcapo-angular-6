@@ -28,6 +28,10 @@ export class ResumeComponent implements OnInit {
     william.scrollIntoView();
   }
 
+  onClickRadio(section: string) {
+    
+  }
+
 }
 /**
  * SECTIONS

@@ -6,6 +6,22 @@
         
     <h2 id="h2-william" style="text-align:center; padding-top:5px;">WILLIAM</h2>
 
+
+    <div class="col-12 text-left">
+        <div ngbRadioGroup name="radioBasic" [(ngModel)]="model">
+            <label ngbButtonLabel class="radio-inline wc-radio-margin" for="softwareRadio" >
+                <input ngbButton value="software" (click)="onClickRadio('software')" type="radio" id="softwareRadio" name="softwareRadio" checked> Software
+            </label>
+            <label ngbButtonLabel class="radio-inline wc-radio-margin" for="salesRadio">
+            <input ngbButton value="sales" (click)="onClickRadio('sales')" type="radio" id="salesRadio" name="salesRadio"> Sales
+            </label>
+            <label ngbButtonLabel class="radio-inline wc-radio-margin" for="consultingRadio">
+            <input ngbButton value="consulting" (click)="onClickRadio('consulting')" type="radio" id="consultingRadio" name="consultingRadio"> Consulting
+            </label>
+        </div>
+    </div>
+
+
     <p id="nationality">
         <strong>Nationality:</strong> USA <strong>Home Base:</strong> Boston <strong>Location:</strong> Remote
         <br>
