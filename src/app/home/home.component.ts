@@ -64,19 +64,17 @@ export class HomeComponent implements OnInit {
     {
       name: 'Travel', description: 'photo albums',
       callToAction: function travelFunc() {},
-      img: "assets/travel-truro.jpg"
+      img: "assets/amazon-boat-great.JPG"
     }, 
     {
       name: 'Music', description: 'videos and music',
       callToAction: function playFunkyMusic() {},
-      // img: "assets/music.png"
-      img: "assets/t2.jpg"
+      img: "assets/new-orleans-jazz.jpg"
     }, 
     {
       name: 'Writings', description: 'pieces written',
       callToAction: function loadWritingsFunc() {},
-      // img: "assets/writing.png"
-      img: "assets/t3.jpg"
+      img: "assets/amazon-sunset-3.JPG"
     }, 
     {
       name: 'Apply Color', description: 'colorize this web page',
@@ -84,29 +82,29 @@ export class HomeComponent implements OnInit {
         console.log('this will call a redux Action to update the color palette', this)
       },
       // img: "assets/palette.png"
-      img: "assets/ta.jpg"
+      img: "assets/colombia-chiva.jpg"
     }, 
     {
       name: 'Apply Picture', description: 'background photo, reset',
       callToAction: function picturizeFunc() {},
       // img: "assets/camera.jpeg"
-      img: "assets/tb.jpg"
+      img: "assets/recife-horse-cart.JPG"
     }, 
     {
       name: 'Sales & Consulting', description: "Link to page",
       callToAction: function whatTheFunc() {},
       // img: "assets/sales.png"
-      img: "assets/tc.jpg"
+      img: "assets/belo-horizonte-people.JPG"
     }, 
     {
       name: 'Book List', description: 'favorites',
       callToAction: function funkyBooks() {},
-      img: "assets/td.jpg"
+      img: "assets/harvard.jpg"
     }, 
     {
       name: 'How This Works', description: 'the code behind this site',
       callToAction: function funkyFunc() {},
-      img: "assets/te.jpg"
+      img: "assets/ukraine-office.jpg"
     }]
     
     this.isLoading = true;
