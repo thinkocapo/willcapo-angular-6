@@ -8,7 +8,7 @@
 
 
     <div class="col-12 text-left">
-        <div ngbRadioGroup name="radioBasic" [(ngModel)]="model">
+        <div ngbRadioGroup name="radioBasic" [(ngModel)]="contentType">
             <label ngbButtonLabel class="radio-inline wc-radio-margin" for="softwareRadio" >
                 <input ngbButton value="software" (click)="onClickRadio('software')" type="radio" id="softwareRadio" name="softwareRadio" checked> Software
             </label>
@@ -21,52 +21,122 @@
         </div>
     </div>
 
-
     <p id="nationality">
         <strong>Nationality:</strong> USA <strong>Home Base:</strong> Boston <strong>Location:</strong> Remote
         <br>
         <strong>Speaks:</strong> Portuguese & Spanish (Advanced), French (Beginner), Russian (Learning), English (Native)</p>
 
-    <h5 id="languages"><strong>Languages</strong></h5>
-    <ul>
-        <li>Javascript (Professional), Java (Intermediate)</li>
-        <!-- <li><strong>Front End:</strong>AngularJS, Angular 6, React, React-Native, Redux, NgRx, Bootstrap 4, CSS3, HTML5, MaterialUI, Webpack, Babel, Gulp</li> -->
-        <!-- <li><strong>Back End:</strong>REST API, NodeJS, Express, Promises, Async,  (C++)</li> -->
-        <!-- <li><strong>Dev Ops:</strong>Docker, Google Cloud Platform, Firebase, AWS, Elastic Beanstalk, EC2, S3, Heroku</li> -->
-    </ul>
-
-    <h5 id="front-end"><strong>Full Stack</strong></h5>
+    <div [ngSwitch]="contentType">
+        <div *ngSwitchCase="'software'">
+            <h5 id="languages"><strong>Languages</strong></h5>
             <ul>
-                <li>FRONT-END - AngularJS, Angular 6, React, React-Native, Redux, NgRx, Bootstrap 4, CSS3, HTML5, MaterialUI, Webpack, Babel, Gulp</li>
+                <li>Javascript (Professional), Java (Intermediate)</li>
+                <!-- <li><strong>Front End:</strong>AngularJS, Angular 6, React, React-Native, Redux, NgRx, Bootstrap 4, CSS3, HTML5, MaterialUI, Webpack, Babel, Gulp</li> -->
+                <!-- <li><strong>Back End:</strong>REST API, NodeJS, Express, Promises, Async,  (C++)</li> -->
+                <!-- <li><strong>Dev Ops:</strong>Docker, Google Cloud Platform, Firebase, AWS, Elastic Beanstalk, EC2, S3, Heroku</li> -->
             </ul>
+        
+            <h5 id="front-end"><strong>Full Stack</strong></h5>
+                    <ul>
+                        <li>FRONT-END - AngularJS, Angular 6, React, React-Native, Redux, NgRx, Bootstrap 4, CSS3, HTML5, MaterialUI, Webpack, Babel, Gulp</li>
+                    </ul>
+                    <ul>
+                        <li>BACK-END - REST API, NodeJS, Express, Spring Boot, Swagger Codegen, Promises, Asynchronous Programming</li>
+                    </ul>
+        
+            <h5 id="dev-ops"><strong>Dev Ops</strong></h5>
             <ul>
-                <li>BACK-END - REST API, NodeJS, Express, Spring Boot, Swagger Codegen, Promises, Asynchronous Programming</li>
+                <li>Docker, Google Cloud Platform, Firebase, AWS, Elastic Beanstalk, EC2, S3, Heroku</li>
+            </ul>
+        
+            <h5 id="database"><strong>Database</strong></h5>
+            <ul>
+                <li>SQL, Postgresql, Sequelize, Mysql</li>
+                <li>NoSQL, MongoDB, Mongoose</li>
+                <li>Hadoop</li>
+            </ul>
+        
+            <h5 id="tools"><strong>Tools/Other</strong></h5>
+            <ul>
+                <li>UNIX, Linux Ubuntu LTS 18.04, Bash, iTerm, Tmux, Shell Scripting</li>
+                <li>Git, Github</li>
+                <li>Agile, Scrum</li>
+                <li>C++, D3.js, Web Audio API, Electron, Sockets, Webhooks</li>
+            </ul>
+        
+            <h5 id="blockchain"><strong>Blockchain</strong></h5>
+            <ul>
+                <li>Web3, Geth, Solc, EOS, Dockerized, Ganache, Truffle, Remix Compiler, Testrpc, BitcoinCore, Solidity, Metamask</li>
             </ul>
 
-    <h5 id="dev-ops"><strong>Dev Ops</strong></h5>
-    <ul>
-        <li>Docker, Google Cloud Platform, Firebase, AWS, Elastic Beanstalk, EC2, S3, Heroku</li>
-    </ul>
+            <h3 id="early-work-experience" style="text-align: center;">PAST WORK EXPERIENCE</h3>
+            <h5 id="moderna-therapeutics-software-engineer"><strong>Moderna Therapeutics</strong> - Software Engineer</h5>
+                <ul>
+                    <li>Developed microservices for biopharma R&amp;D using Angular.js, Node.js, REST API, Postgresql, Docker, AWS</li>
+                    <li>Creation and routing of mRNA sequence data between web apps and AWS cloud services for its nucleic sequence
+                    design, registration, ordering, reviewal and tracking by executives in its pipeline from discovery to FDA Approval</li>
+                    <li>Customized UI, dashboards, filters, relational data display, modals, wizards, and used Bootstrap</li>
+                </ul>
 
-    <h5 id="database"><strong>Database</strong></h5>
-    <ul>
-        <li>SQL, Postgresql, Sequelize, Mysql</li>
-        <li>NoSQL, MongoDB, Mongoose</li>
-        <li>Hadoop</li>
-    </ul>
+        </div>
 
-    <h5 id="tools"><strong>Tools/Other</strong></h5>
-    <ul>
-        <li>UNIX, Linux Ubuntu LTS 18.04, Bash, iTerm, Tmux, Shell Scripting</li>
-        <li>Git, Github</li>
-        <li>Agile, Scrum</li>
-        <li>C++, D3.js, Web Audio API, Electron, Sockets, Webhooks</li>
-    </ul>
+        <div *ngSwitchCase="'sales'">
+            <h5>TopFlightApps</h5>
+            <h5>EclinicalWorks P2P</h5>
+            <h5>Door-to-door Canvassing</h5>
+        </div>
 
-    <h5 id="blockchain"><strong>Blockchain</strong></h5>
-    <ul>
-        <li>Web3, Geth, Solc, EOS, Dockerized, Ganache, Truffle, Remix Compiler, Testrpc, BitcoinCore, Solidity, Metamask</li>
-    </ul>
+        <div *ngSwitchCase="'consulting'">
+            <h5 id="eclinicalworks"><strong>eClinicalWorks</strong></h5>
+            <h5 id="product-management-business-development-orlando-fl-boston-ma-2013-2014">Product Management &amp; Business Development Orlando, FL &amp; Boston, MA 2013 - 2014</h5>
+                <ul>
+                    <li>Collaborated with software engineers to develop interoperability product called P2P, and eClinicalMobile</li>
+                </ul>
+            <h5 id="implementation-consultant-tampa-fl-2011-2013">Implementation Consultant Tampa, FL 2011 - 2013</h5>
+                <ul>
+                    <li>Sole on-site consultant for a 16 month long EMR IT implementation with Baycare Health (500 Doctors)</li>
+                </ul>
+            <h5 id="software-trainer-25-training-assignments-across-15-states-2010-2011">Software Trainer 25 Training Assignments across 15 States 2010 - 2011</h5>
+                <ul>
+                    <li>Trained doctors and administrators on EMR in highly-supervised enterprise environments</li>
+                </ul>
+        </div>
+
+        <div *ngSwitchCase="'education'">
+            <h3>EDUCATION</h3>
+            <h3 id="education" style="text-align:center;">EDUCATION</h3>
+            <h5 id="harvard-extension-school-august-2016-december-2016">Harvard Extension School</h5>
+            <ul>
+                <li>Java for Distributed Programming &amp; Hadoop course, Core Java, Multi-threading, MapReduce jobs in Hadoop August 2016 - December 2016</li>
+            </ul>
+            <h5 id="roger-williams-university-b-s-biology-2006-2010">Roger Williams University B.S. Biology 2006 - 2010</h5>
+            <h5 id="fullstack-academy-nyc">Fullstack Academy NYC</h5>
+            <li>Immersive software engineering bootcamp, focusing on JavaScript and the MEAN stack</li>
+            <li>Created audio visualizer of music by adjusting audio buffers, frequencies, decibels, shapes, and colors (see github)<h4 id="educare-br-intern-developer">Educare.br - Intern Developer</h4>
+            </li>
+
+            <!-- <h4 id="johns-hopkins-university-s-center-for-talented-youth">Johns Hopkins University’s Center For Talented Youth</h4>
+            <h5 id="teaching-assistant-summer-2009-2010-2011">Teaching Assistant Summer 2009, 2010, 2011</h5>
+            <ul>
+                <li>Taught 220 hours of biotechnology in intensive 3 week sessions to advanced teenagers in labs and classrooms</li>
+            </ul> -->
+        </div>
+        
+        <div *ngSwitchCase="'freelance'">
+                <h3 id="current-job-freelance-entrepreneurship" style="text-align: center;">FREELANCE</h3>
+                <h5 id="claimcdr-software-engineer-co-founder-equity-partner"><strong>ClaimCDR</strong> - Software Engineer</h5>
+                    <ul>
+                        <li>www.claimcdr.com Nov 2017 - 2018</li>
+                        <li>Building a platform for Medical Claims Settlement, using React-Redux, Node, Postgres, FHIR</li>
+                        <li>Store clinical and administrative data in a global standard called FHIR, a database and REST API implementation</li>
+                    </ul>
+                <h5 id="team-arrayo"><strong>Team Arrayo</strong> - Software Engineer</h5>
+                <h5 id="team-arrayo"><strong>TopFlightApps</strong> - Sales & Business Development</h5>
+        </div>
+
+    </div>
+    
+    
 
 
     <!-- links to the projects I did with these * -->
@@ -76,44 +146,13 @@
     <li>Web Audio API, D3.js, Electron, Sockets
     </li> -->
 
-
-
-    <h3 id="current-job-freelance-entrepreneurship" style="text-align: center;">FREELANCE</h3>
-        <h5 id="claimcdr-software-engineer-co-founder-equity-partner"><strong>ClaimCDR</strong> - Software Engineer</h5>
-            <ul>
-                <li>www.claimcdr.com Nov 2017 - 2018</li>
-                <li>Building a platform for Medical Claims Settlement, using React-Redux, Node, Postgres, FHIR</li>
-                <li>Store clinical and administrative data in a global standard called FHIR, a database and REST API implementation</li>
-            </ul>
-        <h5 id="team-arrayo"><strong>Team Arrayo</strong> - Software Engineer</h5>
-        <h5 id="team-arrayo"><strong>TopFlightApps</strong> - Sales & Business Development</h5>
         
 
 
     
-    <h3 id="early-work-experience" style="text-align: center;">PAST WORK EXPERIENCE</h3>
 
-    <h5 id="moderna-therapeutics-software-engineer"><strong>Moderna Therapeutics</strong> - Software Engineer</h5>
-        <ul>
-            <li>Developed microservices for biopharma R&amp;D using Angular.js, Node.js, REST API, Postgresql, Docker, AWS</li>
-            <li>Creation and routing of mRNA sequence data between web apps and AWS cloud services for its nucleic sequence
-            design, registration, ordering, reviewal and tracking by executives in its pipeline from discovery to FDA Approval</li>
-            <li>Customized UI, dashboards, filters, relational data display, modals, wizards, and used Bootstrap</li>
-        </ul>
 
-    <h5 id="eclinicalworks"><strong>eClinicalWorks</strong></h5>
-        <h5 id="product-management-business-development-orlando-fl-boston-ma-2013-2014">Product Management &amp; Business Development Orlando, FL &amp; Boston, MA 2013 - 2014</h5>
-            <ul>
-                <li>Collaborated with software engineers to develop interoperability product called P2P, and eClinicalMobile</li>
-            </ul>
-        <h5 id="implementation-consultant-tampa-fl-2011-2013">Implementation Consultant Tampa, FL 2011 - 2013</h5>
-            <ul>
-                <li>Sole on-site consultant for a 16 month long EMR IT implementation with Baycare Health (500 Doctors)</li>
-            </ul>
-        <h5 id="software-trainer-25-training-assignments-across-15-states-2010-2011">Software Trainer 25 Training Assignments across 15 States 2010 - 2011</h5>
-            <ul>
-                <li>Trained doctors and administrators on EMR in highly-supervised enterprise environments</li>
-            </ul>
+
 
 
 
@@ -142,23 +181,8 @@
 
 
 
-    <h3 id="education" style="text-align:center;">EDUCATION</h3>
-        <h5 id="harvard-extension-school-august-2016-december-2016">Harvard Extension School</h5>
-        <ul>
-            <li>Java for Distributed Programming &amp; Hadoop course, Core Java, Multi-threading, MapReduce jobs in Hadoop August 2016 - December 2016</li>
-        </ul>
-        <h5 id="roger-williams-university-b-s-biology-2006-2010">Roger Williams University B.S. Biology 2006 - 2010</h5>
-        <h5 id="fullstack-academy-nyc">Fullstack Academy NYC</h5>
-        <li>Immersive software engineering bootcamp, focusing on JavaScript and the MEAN stack</li>
-        <li>Created audio visualizer of music by adjusting audio buffers, frequencies, decibels, shapes, and colors (see github)<h4 id="educare-br-intern-developer">Educare.br - Intern Developer</h4>
-        </li>
-    
-        <!-- Internship -->
-        <!-- <h4 id="johns-hopkins-university-s-center-for-talented-youth">Johns Hopkins University’s Center For Talented Youth</h4>
-        <h5 id="teaching-assistant-summer-2009-2010-2011">Teaching Assistant Summer 2009, 2010, 2011</h5>
-            <ul>
-                <li>Taught 220 hours of biotechnology in intensive 3 week sessions to advanced teenagers in labs and classrooms</li>
-            </ul> -->
+
+
         
         </div>
     </div>

@@ -1,11 +1,13 @@
-import { MODAL_CONTACT_ME } from '../actions/actions-navigation'
+import { MODAL_CONTACT_ME, SET_CONTENT_TYPE } from '../actions/actions-navigation'
 
 export interface interfaceNavigation { 
-    modalContactMe: boolean
+    modalContactMe: boolean,
+    contentType: string, // TODO enum
 }
 
 const INITIAL_STATE: interfaceNavigation = { 
-    modalContactMe: false
+    modalContactMe: false,
+    contentType: 'software'
 }
 
 export function reducerNavigation (state = INITIAL_STATE, action: any): interfaceNavigation {    
@@ -16,6 +18,11 @@ export function reducerNavigation (state = INITIAL_STATE, action: any): interfac
             return {
                 ...state,
                 ...payload,
+            }
+        case SET_CONTENT_TYPE:
+            return {
+                ...state,
+                contentType: payload
             }
         default:
             return state
