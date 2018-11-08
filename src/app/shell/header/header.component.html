@@ -15,25 +15,27 @@
 <!-- style="max-width: fit-content" -->
 
     <!-- MINI NAVBAR -->
-    <div 
+    <!-- <div 
       class="navbar-toggler no-border text-center" aria-controls="navbar-menu"
       aria-label="Toggle navigation" [attr.aria-expanded]="!menuHidden"
-      style="width: 100%;"
-      >
+      style="width: 100%;">
       <div class="col-12 wc-mobile-mini-menu">WILL CAPO</div>
       <div class="col-12">
           <div class="mini-nav-item navbar-toggler">RESUME</div>
           <div class="mini-nav-item navbar-toggler">FHIR</div>
           <div class="mini-nav-item navbar-toggler">BLOCKCHAIN</div>
           <div class="mini-nav-item navbar-toggler">CODE</div>
-
-          <!-- <h5 class="mini-nav-item navbar-toggler">RESUME</h5>
-          <h5 class="mini-nav-item navbar-toggler">FHIR</h5>
-          <h5 class="mini-nav-item navbar-toggler">BLOCKCHAIN</h5>
-          <h5 class="mini-nav-item navbar-toggler">CODE</h5> -->
-
       </div>
-    </div>
+    </div> -->
+
+    <div data-role="navbar" data-grid="c">
+      <ul>
+          <li><a href="#" class="ui-button-active">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+          <li><a href="#">Four</a></li>
+      </ul>
+    </div><!-- /navbar -->
 
     <!-- REGULAR NAVBAR -->
     <div id="navbar-menu" class="collapse navbar-collapse justify-content-center float-xs-none" [ngbCollapse]="menuHidden">
@@ -59,3 +61,16 @@
 
   </nav>
 </header>
+
+
+
+
+<!-- old mini navbar
+<h5 class="mini-nav-item navbar-toggler">RESUME</h5>
+<h5 class="mini-nav-item navbar-toggler">FHIR</h5>
+<h5 class="mini-nav-item navbar-toggler">BLOCKCHAIN</h5>
+<h5 class="mini-nav-item navbar-toggler">CODE</h5> -->
+
+<!-- JQuery Mobile
+https://jquerymobile.com/download/
+-->
