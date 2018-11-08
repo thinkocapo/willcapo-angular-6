@@ -15,6 +15,7 @@
 <!-- style="max-width: fit-content" -->
 
     <!-- MINI NAVBAR -->
+    <!-- Regular -->
     <!-- <div 
       class="navbar-toggler no-border text-center" aria-controls="navbar-menu"
       aria-label="Toggle navigation" [attr.aria-expanded]="!menuHidden"
@@ -27,18 +28,22 @@
           <div class="mini-nav-item navbar-toggler">CODE</div>
       </div>
     </div> -->
-
-    <div data-role="navbar" data-grid="c">
-      <ul>
-          <li><a href="#" class="ui-button-active">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-          <li><a href="#">Four</a></li>
-      </ul>
-    </div><!-- /navbar -->
+    <div class="mobile-container">
+    <div class="topnav">
+      <a href="#home" class="active">Logo</a>
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" (click)="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    </div>
 
     <!-- REGULAR NAVBAR -->
-    <div id="navbar-menu" class="collapse navbar-collapse justify-content-center float-xs-none" [ngbCollapse]="menuHidden">
+    <!-- <div id="navbar-menu" class="collapse navbar-collapse justify-content-center float-xs-none" [ngbCollapse]="menuHidden">
       <div class="navbar-nav">
         <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/resume" routerLinkActive="active">
           <span translate>RESUME</span>
@@ -55,9 +60,8 @@
         <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
           <span translate>GITHUB/CODE</span>
         </a>
-        
       </div>
-    </div>
+    </div> -->
 
   </nav>
 </header>
@@ -74,3 +78,11 @@
 <!-- JQuery Mobile
 https://jquerymobile.com/download/
 -->
+<!-- <div data-role="navbar" data-grid="c">
+  <ul>
+      <li><a href="#" class="ui-button-active">One</a></li>
+      <li><a href="#">Two</a></li>
+      <li><a href="#">Three</a></li>
+      <li><a href="#">Four</a></li>
+  </ul>
+</div> -->
