@@ -93,7 +93,6 @@ export class HomeComponent implements OnInit {
     {
       name: 'Sales & Consulting', description: "Link to page",
       callToAction: function whatTheFunc() {},
-      // img: "assets/sales.png"
       img: "assets/belo-horizonte-people.JPG"
     }, 
     {
