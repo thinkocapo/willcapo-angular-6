@@ -15,25 +15,35 @@
 <!-- style="max-width: fit-content" -->
 
     <!-- MINI NAVBAR -->
+    <!-- Regular -->
+    <!-- Needs a max-height? See if height expands in Mobile -->
     <div 
       class="navbar-toggler no-border text-center" aria-controls="navbar-menu"
       aria-label="Toggle navigation" [attr.aria-expanded]="!menuHidden"
-      style="width: 100%;"
-      >
-      <div class="col-12 wc-mobile-mini-menu">WILL CAPO</div>
-      <div class="col-12">
-          <div class="mini-nav-item navbar-toggler">RESUME</div>
-          <div class="mini-nav-item navbar-toggler">FHIR</div>
-          <div class="mini-nav-item navbar-toggler">BLOCKCHAIN</div>
-          <div class="mini-nav-item navbar-toggler">CODE</div>
-
-          <!-- <h5 class="mini-nav-item navbar-toggler">RESUME</h5>
-          <h5 class="mini-nav-item navbar-toggler">FHIR</h5>
-          <h5 class="mini-nav-item navbar-toggler">BLOCKCHAIN</h5>
-          <h5 class="mini-nav-item navbar-toggler">CODE</h5> -->
-
+      style="width: 100%;">
+      <div class="row">
+        <div class="col-2 wc-mobile-mini-menu">WILL CAPO</div>
+        <div class="col-10">
+            <div class="mini-nav-item navbar-toggler" routerLink="/resume" routerLinkActive="active">RESUME</div>
+            <div class="mini-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">FHIR</div>
+            <div class="mini-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">BLOCKCHAIN</div>
+            <div class="mini-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">CODE</div>
+        </div>
       </div>
     </div>
+
+    <!-- W3 MOBILE NAVBAR https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+    <!-- <div class="topnav">
+      <a href="#home" class="active">Logo</a>
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" (click)="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div> -->
 
     <!-- REGULAR NAVBAR -->
     <div id="navbar-menu" class="collapse navbar-collapse justify-content-center float-xs-none" [ngbCollapse]="menuHidden">
@@ -53,9 +63,29 @@
         <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
           <span translate>GITHUB/CODE</span>
         </a>
-        
       </div>
     </div>
 
   </nav>
 </header>
+
+
+
+
+<!-- old mini navbar
+<h5 class="mini-nav-item navbar-toggler">RESUME</h5>
+<h5 class="mini-nav-item navbar-toggler">FHIR</h5>
+<h5 class="mini-nav-item navbar-toggler">BLOCKCHAIN</h5>
+<h5 class="mini-nav-item navbar-toggler">CODE</h5> -->
+
+<!-- JQuery Mobile
+https://jquerymobile.com/download/
+-->
+<!-- <div data-role="navbar" data-grid="c">
+  <ul>
+      <li><a href="#" class="ui-button-active">One</a></li>
+      <li><a href="#">Two</a></li>
+      <li><a href="#">Three</a></li>
+      <li><a href="#">Four</a></li>
+  </ul>
+</div> -->
