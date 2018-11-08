@@ -19,6 +19,17 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() { }
 
+  // w3 mobile navbar
+  myFunction() {
+    console.log("my function...")
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
   selectMenuOption(item: string) {
     console.log("selectMenuOption", item)
   }
