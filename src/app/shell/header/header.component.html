@@ -16,20 +16,23 @@
 
     <!-- MINI NAVBAR -->
     <!-- Regular -->
-    <!-- <div 
+    <div 
       class="navbar-toggler no-border text-center" aria-controls="navbar-menu"
       aria-label="Toggle navigation" [attr.aria-expanded]="!menuHidden"
       style="width: 100%;">
-      <div class="col-12 wc-mobile-mini-menu">WILL CAPO</div>
-      <div class="col-12">
-          <div class="mini-nav-item navbar-toggler">RESUME</div>
-          <div class="mini-nav-item navbar-toggler">FHIR</div>
-          <div class="mini-nav-item navbar-toggler">BLOCKCHAIN</div>
-          <div class="mini-nav-item navbar-toggler">CODE</div>
+      <div class="row">
+        <div class="col-2 wc-mobile-mini-menu">WILL CAPO</div>
+        <div class="col-10">
+            <div class="mini-nav-item navbar-toggler">RESUME</div>
+            <div class="mini-nav-item navbar-toggler">FHIR</div>
+            <div class="mini-nav-item navbar-toggler">BLOCKCHAIN</div>
+            <div class="mini-nav-item navbar-toggler">CODE</div>
+        </div>
       </div>
-    </div> -->
-    <div class="mobile-container">
-    <div class="topnav">
+    </div>
+
+    <!-- W3 MOBILE NAVBAR https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+    <!-- <div class="topnav">
       <a href="#home" class="active">Logo</a>
       <div id="myLinks">
         <a href="#news">News</a>
@@ -39,11 +42,10 @@
       <a href="javascript:void(0);" class="icon" (click)="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
-    </div>
-    </div>
+    </div> -->
 
     <!-- REGULAR NAVBAR -->
-    <!-- <div id="navbar-menu" class="collapse navbar-collapse justify-content-center float-xs-none" [ngbCollapse]="menuHidden">
+    <div id="navbar-menu" class="collapse navbar-collapse justify-content-center float-xs-none" [ngbCollapse]="menuHidden">
       <div class="navbar-nav">
         <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/resume" routerLinkActive="active">
           <span translate>RESUME</span>
@@ -61,7 +63,7 @@
           <span translate>GITHUB/CODE</span>
         </a>
       </div>
-    </div> -->
+    </div>
 
   </nav>
 </header>
