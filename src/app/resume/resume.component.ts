@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReduxService } from '@app/services/redux.service'
 
 /*
 Markdown Editor but need Render Markdown
@@ -20,12 +21,26 @@ https://zapier.com/blog/markdown-html-export/
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
+  contentType: string // pull from an interface in Redux, if needs be shared in multiple components
 
-  constructor() { }
+  constructor(
+    private reduxService: ReduxService
+  ) {
+    this.onReduxUpdate = this.onReduxUpdate.bind(this)
+  }
 
   ngOnInit() {
+    this.contentType = 'software'
     const william = document.getElementById('h2-william')
     william.scrollIntoView();
+  }
+
+  onClickRadio(contentType: string) {
+    this.contentType = contentType
+  }
+
+  onReduxUpdate(state: any) {
+    this.contentType = state.contentType
   }
 
 }
