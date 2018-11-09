@@ -1,21 +1,26 @@
 
 .wc-modal-header-color {
     // background-color: #4d1b00;
-    background-color: #3e3117;
+    // background-color: #3e3117;
+    // background-color: #eab64f;
+    background-color: #ffb400;
+    filter: opacity(0.9);
 }
 
 .wc-modal-body-color {
     // background-color: #FF6700; //safety orange
     // background-color: #dfa943; // caramel woods
-    background-color: #eab64f;
+    // background-color: #eab64f;
+    color: black;
 }
 
 .contact-me-text-color {
     // color: #ffb400;
-    color: white;
+    // color: white;
+    color: black;
 }
 
 .contact-me-submit {
-    color: white;
-    border-color: white;
+    color: black;
+    border-color: black;
 }
