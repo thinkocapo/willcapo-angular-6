@@ -74,7 +74,8 @@ export class HomeComponent implements OnInit {
     {
       name: 'Writings', description: 'pieces written',
       callToAction: function loadWritingsFunc() {},
-      img: "assets/amazon-sunset-3.JPG"
+      // img: "assets/amazon-sunset-3.JPG" // too dark
+      img: "assets/colombia-cow-santa-elena.jpg"
     }, 
     {
       name: 'Apply Color', description: 'colorize this web page',
@@ -103,7 +104,8 @@ export class HomeComponent implements OnInit {
     {
       name: 'How This Works', description: 'the code behind this site',
       callToAction: function funkyFunc() {},
-      img: "assets/ukraine-office.jpg"
+      img: "assets/workspace-guitar.jpg"
+      // img: "assets/ukraine-office.jpg" // too plain
     }]
     
     this.isLoading = true;
