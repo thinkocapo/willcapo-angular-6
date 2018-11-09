@@ -107,15 +107,27 @@
 .wc-navbar {
     // background-color: #9e9a75 !important
     background-color: #554840 !important;
-    margin-bottom: 0px !important;
+    // margin-bottom: 0px !important;
+
+    padding-top: 0px !important; // so nav items expand and fit
+    padding-bottom: 0px !important;
+    margin-bottom: 0rem !important; // was a property on .navbar
 }
 .wc-nav-item {
-    height: 50px;
+    // height: 50px;
     width: 200px;
-    margin: auto;
+    // margin: auto;
     text-align: center;
     font-size: 24px;
+
+    border-style: solid; // so nav items expand and fit
+    // min-height: max-content !important;
 }
+.wc-nav-item span { // so nav items expand and fit
+    display: inline-block;
+    padding: 8px;
+}
+
 .wc-nav-text-color {
     // color: #1c222e !important;
     color: #202020 !important;
