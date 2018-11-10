@@ -6,28 +6,38 @@
         
     <h2 id="h2-william" style="text-align:center; padding-top:5px;">WILLIAM</h2>
 
+    <div id="nationality" class="text-center">
+        <p id="nationality">
+        <strong>Nationality:</strong> USA <strong>Home:</strong> Boston <strong>Location:</strong> Remote
+        <br>
+        <strong>Speaks:</strong> Portuguese & Spanish (Advanced), Russian (Beginner), English (Native)</p>
+    </div>
 
-    <div class="col-12 text-left">
+    <!-- <div class="justify-conter-center"> -->
+
+    
+    <div class="col-12 text-center">
         <div ngbRadioGroup name="radioBasic" [(ngModel)]="contentType">
             <label ngbButtonLabel class="radio-inline wc-radio-margin" for="softwareRadio" >
                 <input ngbButton value="software" (click)="onClickRadio('software')" type="radio" id="softwareRadio" name="softwareRadio" checked> Software
             </label>
             <label ngbButtonLabel class="radio-inline wc-radio-margin" for="salesRadio">
-            <input ngbButton value="sales" (click)="onClickRadio('sales')" type="radio" id="salesRadio" name="salesRadio"> Sales
+                <input ngbButton value="sales" (click)="onClickRadio('sales')" type="radio" id="salesRadio" name="salesRadio"> Sales
             </label>
             <label ngbButtonLabel class="radio-inline wc-radio-margin" for="consultingRadio">
-            <input ngbButton value="consulting" (click)="onClickRadio('consulting')" type="radio" id="consultingRadio" name="consultingRadio"> Consulting
+                <input ngbButton value="consulting" (click)="onClickRadio('consulting')" type="radio" id="consultingRadio" name="consultingRadio"> Consulting
+            </label>
+            <label ngbButtonLabel class="radio-inline wc-radio-margin" for="educationRadio">
+                <input ngbButton value="education" (click)="onClickRadio('education')" type="radio" id="educationRadio" name="educationRadio"> Education
             </label>
         </div>
     </div>
 
-    <p id="nationality">
-        <strong>Nationality:</strong> USA <strong>Home Base:</strong> Boston <strong>Location:</strong> Remote
-        <br>
-        <strong>Speaks:</strong> Portuguese & Spanish (Advanced), French (Beginner), Russian (Learning), English (Native)</p>
+    <!-- </div> -->
 
     <div [ngSwitch]="contentType">
         <div *ngSwitchCase="'software'">
+            <h3 style="text-align: center;">SKILLS</h3>
             <h5 id="languages"><strong>Languages</strong></h5>
             <ul>
                 <li>Javascript (Professional), Java (Intermediate)</li>
@@ -38,10 +48,10 @@
         
             <h5 id="front-end"><strong>Full Stack</strong></h5>
                     <ul>
-                        <li>FRONT-END - AngularJS, Angular 6, React, React-Native, Redux, NgRx, Bootstrap 4, CSS3, HTML5, MaterialUI, Webpack, Babel, Gulp</li>
+                        <li><strong>FRONT-END</strong> - AngularJS, Angular 6, React, React-Native, Redux, NgRx, Bootstrap 4, CSS3, HTML5, MaterialUI, Webpack, Babel, Gulp</li>
                     </ul>
                     <ul>
-                        <li>BACK-END - REST API, NodeJS, Express, Spring Boot, Swagger Codegen, Promises, Asynchronous Programming</li>
+                        <li><strong>BACK-END</strong> - NodeJS, Express.js, REST API, Spring Boot, Swagger Codegen, Promises, Asynchronous Programming</li>
                     </ul>
         
             <h5 id="dev-ops"><strong>Dev Ops</strong></h5>
@@ -69,8 +79,22 @@
                 <li>Web3, Geth, Solc, EOS, Dockerized, Ganache, Truffle, Remix Compiler, Testrpc, BitcoinCore, Solidity, Metamask</li>
             </ul>
 
-            <h3 id="early-work-experience" style="text-align: center;">PAST WORK EXPERIENCE</h3>
-            <h5 id="moderna-therapeutics-software-engineer"><strong>Moderna Therapeutics</strong> - Software Engineer</h5>
+            <h3 style="text-align: center;">CURRENT</h3>
+            <h5 id="claimcdr-software-engineer"><strong>Bristol Myers Squib (Consulting with Team Arrayo)</strong> - Software Engineer (2018)</h5>
+            <ul>
+                <li>Lead full stack developer for re-building the BMS Computational Genomics web application suite</li>
+                <li>Angular 6, Spring Boot back-end in Java, SolR DB integration, Docker</li>
+            </ul>
+            <h5 id="claimcdr-software-engineer"><strong>ClaimCDR</strong> - Software Engineer & Co-Founder (2017)</h5>
+            <ul>
+                <li>Building a Medical Claims Settlement platform for NGHP’s, using FHIR, React-Redux, Node, Postgres</li>
+                <li>Store clinical and administrative data according to the FHIR specification, which includes API and DB schema</li>
+                <li>Created a FHIR library for mapping app data structures into FHIR Resources data model</li>
+                <li>Custom response and error-handling in the fhir-lib.js to the HATEOAS styled FHIR API</li>
+                <li>Test and Prod Instances of the FHIR HAPI implementation</li>
+            </ul>
+            <h3 id="past-work-experience" style="text-align: center;">PAST</h3>
+            <h5 id="moderna-therapeutics-software-engineer"><strong>Moderna Therapeutics</strong> - Software Engineer (2016-2017)</h5>
                 <ul>
                     <li>Developed microservices for biopharma R&amp;D using Angular.js, Node.js, REST API, Postgresql, Docker, AWS</li>
                     <li>Creation and routing of mRNA sequence data between web apps and AWS cloud services for its nucleic sequence
@@ -78,26 +102,32 @@
                     <li>Customized UI, dashboards, filters, relational data display, modals, wizards, and used Bootstrap</li>
                 </ul>
 
+
         </div>
 
-        <div *ngSwitchCase="'sales'">
-                <!-- <h5 id="eclinicalworks"><strong>SALESTEST</strong></h5> -->
-
-            <h5>TopFlightApps</h5>
+        <div *ngSwitchCase="'sales'" style="min-height: 600px">
+            <h3 style="text-align: center;">CURRENT</h3>
+            <h5><strong>ClaimCDR - Software Engineer & Co-Founder (2017)</strong></h5>
                 <ul>
-                    <li>Thing I did</li>
+                    <li>Preparing the Sales Strategy for going to the market with MVP</li>
                 </ul>
-            <!-- <h5>EclinicalWorks P2P</h5>
+            <h5><strong>TopFlightApps - Sales Consultant (2018)</strong></h5>
                 <ul>
-                    <li>Thing I did</li>
-                </ul> -->
-            <h5>Door-to-door Canvassing</h5>
-                <ul>
-                    <li>Thing I did</li>
+                    <li>Handle inbound leads and provide subject matter expertise in Healthcare IT and FHIR </li>
+                    <li>Identify business requirements and profile prospects, align them with TopFlightApps resources and solutions</li>
                 </ul>
+            <!-- <h5>EclinicalWorks P2P</h5> -->
+                <!-- <ul> -->
+                    <!-- <li>Thing I did</li> -->
+                <!-- </ul> -->
+            <!-- <h5>Door-to-door Canvassing</h5> -->
+                <!-- <ul> -->
+                    <!-- <li>Thing I did</li> -->
+                <!-- </ul> -->
         </div>
 
-        <div *ngSwitchCase="'consulting'">
+        <div *ngSwitchCase="'consulting'" style="min-height: 600px">
+            <h3 style="text-align: center;">PAST</h3>
             <h5 id="eclinicalworks"><strong>eClinicalWorks</strong></h5>
             <h5 id="product-management-business-development-orlando-fl-boston-ma-2013-2014">Product Management &amp; Business Development Orlando, FL &amp; Boston, MA 2013 - 2014</h5>
                 <ul>
@@ -113,8 +143,7 @@
                 </ul>
         </div>
 
-        <div *ngSwitchCase="'education'">
-            <h3>EDUCATION</h3>
+        <div *ngSwitchCase="'education'" style="min-height: 600px">
             <h3 id="education" style="text-align:center;">EDUCATION</h3>
             <h5 id="harvard-extension-school-august-2016-december-2016">Harvard Extension School</h5>
             <ul>
@@ -133,7 +162,7 @@
             </ul> -->
         </div>
         
-        <div *ngSwitchCase="'freelance'">
+        <!-- <div *ngSwitchCase="'freelance'">
                 <h3 id="current-job-freelance-entrepreneurship" style="text-align: center;">FREELANCE</h3>
                 <h5 id="claimcdr-software-engineer-co-founder-equity-partner"><strong>ClaimCDR</strong> - Software Engineer</h5>
                     <ul>
@@ -143,7 +172,7 @@
                     </ul>
                 <h5 id="team-arrayo"><strong>Team Arrayo</strong> - Software Engineer</h5>
                 <h5 id="team-arrayo"><strong>TopFlightApps</strong> - Sales & Business Development</h5>
-        </div>
+        </div> -->
 
     </div>
     
