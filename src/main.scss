@@ -119,9 +119,11 @@
     // margin: auto;
     text-align: center;
     font-size: 24px;
-
-    border-style: solid; // so nav items expand and fit
+}
+.wc-nav-item:hover {
+    border-style: solid;
     // min-height: max-content !important;
+    border-radius: 22px;
 }
 .wc-nav-item span { // so nav items expand and fit
     display: inline-block;
@@ -174,7 +176,8 @@
 .wc-footer-contact-me {
     font-size: 2em;
     // background-color: #dfa943; // darker, but too dark with opacity filter
-    background-color: #ffb400; // brighter, but ok with opacity filter
+    // background-color: #ffb400; // brighter, but ok with opacity filter
+    background-color: #554840; // brighter, but ok with opacity filter
     color: black;
     cursor: pointer;
     padding-left: 35px;
@@ -182,9 +185,10 @@
     font-weight: 100;
     filter: opacity(0.7);
     border-style: solid;
-    border-width: 2px;
+    border-width: 4px;
     border-radius: 6px;
-    border-color: #3e3117;
+    // border-color: #3e3117;
+    border-color: black;
 }
 
 .footer {
