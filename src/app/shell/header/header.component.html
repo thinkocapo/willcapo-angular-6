@@ -11,23 +11,19 @@
       <span class="navbar-toggler-icon"></span>
     </button> -->
 
-
-<!-- style="max-width: fit-content" -->
+    <!-- style="max-width: fit-content" -->
 
     <!-- MINI NAVBAR -->
-    <!-- Regular -->
-    <!-- Needs a max-height? See if height expands in Mobile -->
     <div 
-      class="navbar-toggler no-border text-center" aria-controls="navbar-menu"
-      aria-label="Toggle navigation" [attr.aria-expanded]="!menuHidden"
-      style="width: 100%;">
+      class="navbar-toggler wc-mobile-navbar no-border text-center" aria-controls="navbar-menu"
+      aria-label="Toggle navigation" [attr.aria-expanded]="!menuHidden">
       <div class="row">
-        <div class="col-2 wc-mobile-mini-menu">WILL CAPO</div>
-        <div class="col-10">
-            <div class="mini-nav-item navbar-toggler" routerLink="/resume" routerLinkActive="active">RESUME</div>
-            <div class="mini-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">FHIR</div>
-            <div class="mini-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">BLOCKCHAIN</div>
-            <div class="mini-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">CODE</div>
+        <div class="col-2 wc-mobile-menu">WILL CAPO</div>
+        <div class="col-10 wc-mobile-fit-column">
+            <div class="mobile-nav-item navbar-toggler" routerLink="/resume" routerLinkActive="active">RESUME</div>
+            <div class="mobile-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">FHIR</div>
+            <div class="mobile-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">BLOCKCHAIN</div>
+            <div class="mobile-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">CODE</div>
         </div>
       </div>
     </div>

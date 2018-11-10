@@ -12,15 +12,18 @@
   border-style: none;
 }
 
-.wc-mobile-mini-menu {
+.wc-mobile-menu {
   text-align: center;
   color: black;
   padding-bottom: 3px;
   font-weight: bold;
 }
+.wc-mobile-navbar {
+  width: 100%; padding-top:0px;padding-bottom:0px;
+}
   
 // max-width: fit-content;
-.mini-nav-item {
+.mobile-nav-item {
   text-align: center;
   color: black;
   border-color: black;
@@ -32,9 +35,15 @@
   padding-right: 1px;
 
   float:left;
-  margin-left: 5px;
+  // margin-left: 5px;
   height: 43px;
   background-color: #ddd;
+
+  width: 20%;
+  margin-left: 0px;
+}
+.wc-mobile-fit-column {
+  padding-left: 0px; padding-right:0px;
 }
 .mini-nav-item:hover {
   // background-color: #ddd;
