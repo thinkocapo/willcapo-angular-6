@@ -48,19 +48,25 @@
     <!-- REGULAR NAVBAR -->
     <div id="navbar-menu" class="collapse navbar-collapse justify-content-center float-xs-none" [ngbCollapse]="menuHidden">
       <div class="navbar-nav">
-        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/resume" routerLinkActive="active">
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" 
+          routerLink="/resume" routerLinkActive="active">
           <span translate>RESUME</span>
         </a>
-        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" 
+          href="https://www.dev7.claimcdr.com" target="_blank">
           <span translate>FHIR</span>
         </a>
-        <a *ngIf="menuHidden" class="nav-item wc-nav-app-name nav-link text-uppercase text-center" routerLink="/home" routerLinkActive="active">
+        <a *ngIf="menuHidden" class="nav-item wc-nav-app-name nav-link text-uppercase text-center" 
+          routerLink="/home" routerLinkActive="active">
           <span class="wc-nav-text-color" bg-success translate>APP_NAME</span>
         </a>
-        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" 
+          routerLink="/home" routerLinkActive="active"
+          style="cursor: no-drop;">
           <span translate>BLOCKCHAIN</span>
         </a>
-        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase"
+          href="https://www.github.com/thinkocapo/" target="_blank">
           <span translate>GITHUB/CODE</span>
         </a>
       </div>

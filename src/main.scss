@@ -119,11 +119,20 @@
     // margin: auto;
     text-align: center;
     font-size: 24px;
+    padding-bottom: 1px; // fixes the bouncing when hovering, i.e. border causes nav-item to expand
+
+    // will make the wc-nav-item border overlap the navbar black border
+    // margin-bottom: -3px;
+    // margin-top: -4px;
 }
+// or apply background-color like https://bulma.io/documentation/components/navbar/
 .wc-nav-item:hover {
     border-style: solid;
     // min-height: max-content !important;
     border-radius: 22px;
+    border-width: 3px;
+    border-color: white;
+    color: white !important;
 }
 .wc-nav-item span { // so nav items expand and fit
     display: inline-block;
@@ -131,7 +140,6 @@
 }
 
 .wc-nav-text-color {
-    // color: #1c222e !important;
     color: #202020 !important;
     font-weight: 900; // normal , lighter, bold, 800
 }
