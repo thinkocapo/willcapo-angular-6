@@ -34,7 +34,6 @@ export class FooterComponent implements OnInit {
     // }
     // this.reduxService.action(SET_COLOR_THEME, theme)
     
-    // console.log('contactMe()...', this.showModalContactMe)
     this.showModalContactMe = true
   }
 

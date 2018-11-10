@@ -4,33 +4,46 @@
     <div class="row">
         <div id="resume-id" class="col-12">
         
-    <h2 id="h2-william" style="text-align:center; padding-top:5px;">WILLIAM</h2>
+    <h2 id="h2-william" style="text-align:center; padding-top:5px;">Hi, I'm William</h2>
 
+    <div id="nationality" class="text-center">
+        <p id="nationality">
+        <strong>Nationality:</strong> USA | <strong>Home:</strong> Boston | <strong>Location:</strong> Remote
+        <br>
+        <strong>Speaks: </strong>English (Native), Portuguese & Spanish (Advanced), Russian (Beginner)</p>
+    </div>
 
-    <div class="col-12 text-left">
+    <!-- <div class="justify-conter-center"> -->
+
+    
+    <div class="col-12 text-center">
         <div ngbRadioGroup name="radioBasic" [(ngModel)]="contentType">
             <label ngbButtonLabel class="radio-inline wc-radio-margin" for="softwareRadio" >
                 <input ngbButton value="software" (click)="onClickRadio('software')" type="radio" id="softwareRadio" name="softwareRadio" checked> Software
             </label>
             <label ngbButtonLabel class="radio-inline wc-radio-margin" for="salesRadio">
-            <input ngbButton value="sales" (click)="onClickRadio('sales')" type="radio" id="salesRadio" name="salesRadio"> Sales
+                <input ngbButton value="sales" (click)="onClickRadio('sales')" type="radio" id="salesRadio" name="salesRadio"> Sales
             </label>
             <label ngbButtonLabel class="radio-inline wc-radio-margin" for="consultingRadio">
-            <input ngbButton value="consulting" (click)="onClickRadio('consulting')" type="radio" id="consultingRadio" name="consultingRadio"> Consulting
+                <input ngbButton value="consulting" (click)="onClickRadio('consulting')" type="radio" id="consultingRadio" name="consultingRadio"> Consulting
+            </label>
+            <label ngbButtonLabel class="radio-inline wc-radio-margin" for="educationRadio">
+                <input ngbButton value="education" (click)="onClickRadio('education')" type="radio" id="educationRadio" name="educationRadio"> Education
+            </label>
+            <label ngbButtonLabel class="radio-inline wc-radio-margin" for="blockchainRadio">
+                <input ngbButton value="blockchain" (click)="onClickRadio('blockchain')" type="radio" id="blockchainRadio" name="blockchainRadio"> Blockchain
             </label>
         </div>
     </div>
 
-    <p id="nationality">
-        <strong>Nationality:</strong> USA <strong>Home Base:</strong> Boston <strong>Location:</strong> Remote
-        <br>
-        <strong>Speaks:</strong> Portuguese & Spanish (Advanced), French (Beginner), Russian (Learning), English (Native)</p>
+    <!-- </div> -->
 
     <div [ngSwitch]="contentType">
         <div *ngSwitchCase="'software'">
+            <h3 style="text-align: center;">Skills</h3>
             <h5 id="languages"><strong>Languages</strong></h5>
             <ul>
-                <li>Javascript (Professional), Java (Intermediate)</li>
+                <li>Javascript (Professional), Java (Intermediate), 3 Years Experience</li>
                 <!-- <li><strong>Front End:</strong>AngularJS, Angular 6, React, React-Native, Redux, NgRx, Bootstrap 4, CSS3, HTML5, MaterialUI, Webpack, Babel, Gulp</li> -->
                 <!-- <li><strong>Back End:</strong>REST API, NodeJS, Express, Promises, Async,  (C++)</li> -->
                 <!-- <li><strong>Dev Ops:</strong>Docker, Google Cloud Platform, Firebase, AWS, Elastic Beanstalk, EC2, S3, Heroku</li> -->
@@ -38,10 +51,10 @@
         
             <h5 id="front-end"><strong>Full Stack</strong></h5>
                     <ul>
-                        <li>FRONT-END - AngularJS, Angular 6, React, React-Native, Redux, NgRx, Bootstrap 4, CSS3, HTML5, MaterialUI, Webpack, Babel, Gulp</li>
+                        <li><strong>Front-End</strong> - AngularJS, Angular 6, React, React-Native, Redux, NgRx, Bootstrap 4, CSS3, HTML5, MaterialUI, Webpack, Babel, Gulp</li>
                     </ul>
                     <ul>
-                        <li>BACK-END - REST API, NodeJS, Express, Spring Boot, Swagger Codegen, Promises, Asynchronous Programming</li>
+                        <li><strong>Back-End</strong> - NodeJS, Express.js, REST API, Spring Boot, Swagger Codegen, Promises, Asynchronous Programming</li>
                     </ul>
         
             <h5 id="dev-ops"><strong>Dev Ops</strong></h5>
@@ -69,8 +82,22 @@
                 <li>Web3, Geth, Solc, EOS, Dockerized, Ganache, Truffle, Remix Compiler, Testrpc, BitcoinCore, Solidity, Metamask</li>
             </ul>
 
-            <h3 id="early-work-experience" style="text-align: center;">PAST WORK EXPERIENCE</h3>
-            <h5 id="moderna-therapeutics-software-engineer"><strong>Moderna Therapeutics</strong> - Software Engineer</h5>
+            <h3 style="text-align: center;">Current Work</h3>
+            <h5 id="claimcdr-software-engineer"><strong>Bristol Myers Squib </strong>(DBA Team Arrayo) - Software Engineer (2018)</h5>
+            <ul>
+                <li>Lead full stack developer for re-building the BMS Computational Genomics web application suite</li>
+                <li>Angular 6, Spring Boot back-end in Java, SolR DB integration, Docker</li>
+            </ul>
+            <h5 id="claimcdr-software-engineer"><strong>ClaimCDR</strong> - Software Engineer & Co-Founder (2017)</h5>
+            <ul>
+                <li>Building a Medical Claims Settlement platform for NGHP’s, using FHIR, React-Redux, Node, Postgres</li>
+                <li>Store clinical and administrative data according to the FHIR specification, which includes API and DB schema</li>
+                <li>Created a FHIR library for mapping app data structures into FHIR Resources data model</li>
+                <li>Custom response and error-handling in the fhir-lib.js to the HATEOAS styled FHIR API</li>
+                <li>Test and Prod Instances of the FHIR HAPI implementation</li>
+            </ul>
+            <h3 id="past-work-experience" style="text-align: center;">Past Work</h3>
+            <h5 id="moderna-therapeutics-software-engineer"><strong>Moderna Therapeutics </strong>(DBA Team Arrayo) - Software Engineer (2016-2017)</h5>
                 <ul>
                     <li>Developed microservices for biopharma R&amp;D using Angular.js, Node.js, REST API, Postgresql, Docker, AWS</li>
                     <li>Creation and routing of mRNA sequence data between web apps and AWS cloud services for its nucleic sequence
@@ -78,62 +105,111 @@
                     <li>Customized UI, dashboards, filters, relational data display, modals, wizards, and used Bootstrap</li>
                 </ul>
 
+
         </div>
 
-        <div *ngSwitchCase="'sales'">
-                <!-- <h5 id="eclinicalworks"><strong>SALESTEST</strong></h5> -->
-
-            <h5>TopFlightApps</h5>
+        <div *ngSwitchCase="'sales'" style="min-height: 600px">
+            <h3 style="text-align: center;">Current</h3>
+            <h5><strong>ClaimCDR </strong>- Sales Engineer (2017)</h5>
                 <ul>
-                    <li>Thing I did</li>
+                    <li>Preparing the Sales Strategy for going to market with MVP</li>
                 </ul>
-            <!-- <h5>EclinicalWorks P2P</h5>
+            <h5><strong>TopFlightApps </strong>- Sales Consultant (2018)</h5>
                 <ul>
-                    <li>Thing I did</li>
-                </ul> -->
-            <h5>Door-to-door Canvassing</h5>
-                <ul>
-                    <li>Thing I did</li>
+                    <li>Handle inbound leads and provide subject matter expertise in Healthcare IT and FHIR </li>
+                    <li>Identify business requirements and profile prospects, align them with TopFlightApps resources and solutions</li>
                 </ul>
+            <!-- <h5>EclinicalWorks P2P</h5> -->
+                <!-- <ul> -->
+                    <!-- <li>Thing I did</li> -->
+                <!-- </ul> -->
+            <!-- <h5>Door-to-door Canvassing</h5> -->
+                <!-- <ul> -->
+                    <!-- <li>Thing I did</li> -->
+                <!-- </ul> -->
         </div>
 
-        <div *ngSwitchCase="'consulting'">
-            <h5 id="eclinicalworks"><strong>eClinicalWorks</strong></h5>
-            <h5 id="product-management-business-development-orlando-fl-boston-ma-2013-2014">Product Management &amp; Business Development Orlando, FL &amp; Boston, MA 2013 - 2014</h5>
+        <div *ngSwitchCase="'consulting'" style="min-height: 600px">
+            <h3 style="text-align: center;">Past</h3>
+            <h5 id="product-management-business-development-orlando-fl-boston-ma-2013-2014"><strong>eClinicalWorks </strong>Product Management &amp; Business Development (2013-2014)</h5>
                 <ul>
                     <li>Collaborated with software engineers to develop interoperability product called P2P, and eClinicalMobile</li>
+                    <li>Orlando, FL &amp; Boston, MA</li>
                 </ul>
-            <h5 id="implementation-consultant-tampa-fl-2011-2013">Implementation Consultant Tampa, FL 2011 - 2013</h5>
+            <h5 id="implementation-consultant-tampa-fl-2011-2013"><strong>eClinicalWorks </strong>Implementation Consultant (2011 - 2013)</h5>
                 <ul>
                     <li>Sole on-site consultant for a 16 month long EMR IT implementation with Baycare Health (500 Doctors)</li>
+                    <li>Tampa, FL</li>
                 </ul>
-            <h5 id="software-trainer-25-training-assignments-across-15-states-2010-2011">Software Trainer 25 Training Assignments across 15 States 2010 - 2011</h5>
+            <h5 id="software-trainer-25-training-assignments-across-15-states-2010-2011"><strong>eClinicalWorks </strong>Software Trainer (2010-2013)</h5>
                 <ul>
                     <li>Trained doctors and administrators on EMR in highly-supervised enterprise environments</li>
+                    <li>25 Training Assignments across 15 States 2010 - 2011</li>
                 </ul>
         </div>
 
-        <div *ngSwitchCase="'education'">
-            <h3>EDUCATION</h3>
-            <h3 id="education" style="text-align:center;">EDUCATION</h3>
-            <h5 id="harvard-extension-school-august-2016-december-2016">Harvard Extension School</h5>
-            <ul>
-                <li>Java for Distributed Programming &amp; Hadoop course, Core Java, Multi-threading, MapReduce jobs in Hadoop August 2016 - December 2016</li>
-            </ul>
-            <h5 id="roger-williams-university-b-s-biology-2006-2010">Roger Williams University B.S. Biology 2006 - 2010</h5>
-            <h5 id="fullstack-academy-nyc">Fullstack Academy NYC</h5>
-            <li>Immersive software engineering bootcamp, focusing on JavaScript and the MEAN stack</li>
-            <li>Created audio visualizer of music by adjusting audio buffers, frequencies, decibels, shapes, and colors (see github)<h4 id="educare-br-intern-developer">Educare.br - Intern Developer</h4>
-            </li>
+        <div *ngSwitchCase="'blockchain'" style="min-height: 600px;">
+            <h3 id="blockchain-section" style="text-align: center;">D e c e n t r a l i z e</h3>
+            <h5 id="consensys-developer-academy"><strong>ConsenSys Developer Academy </strong>(2018)</h5>
+                <ul>
+                    <li>Smart contract and dApp development course to become an industry-leading ethereum developer</li>
+                </ul>
+            <h5 id="full-stack-fund"><strong>Full Stack Fund </strong>(2018)</h5>
+                <ul>
+                    <li>Smart contracts for creating individual ether lotteries with varying participants and contribution amounts</li>
+                    <li>Metamask, Web3js, Solidity Contracts, Ganache, Testrpc, automated by Tmux and shell scripts
+                    <li><a href="https://github.com/thinkocapo/full-stack-fund" target="_blank">github.com/thinkocapo/full-stack-fund</a></li>
+                </ul>
+            <h5 id="hashtronic"><strong>Hashtronic </strong>(2018)</h5>
+                <ul>
+                    <li>Web3 and Node.js Scripting utility to send raw ethereum transactions on mainnet, using remote geth node</li>
+                    <li><a href="https://github.com/thinkocapo/hash-tronic" target="_blank">github.com/thinkocapo/hash-tronic</a></li>
+                </ul>
+            <h5 id="misc-blockchain"><strong>Miscellaneous</strong>(2017-2018)</h5>
+                <ul>
+                    <li>Run nodes of Bitcoin, EOS, Cardano, Ethereum</li>
+                    <li><a href="https://github.com/thinkocapo/bitcoin-demo" target="_blank">github.com/thinkocapo/bitcoin-demo</a></li>
+                    <li><a href="https://github.com/thinkocapo/eos-instructions" target="_blank">github.com/thinkocapo/eos-instructions</a></li>
+                    <li><a href="https://github.com/thinkocapo/How-to-run-Cardano-Node" target="_blank">github.com/thinkocapo/How-to-run-Cardano-Node</a></li>
+                    <li>Gave a blockchain presentation <a href="https://github.com/thinkocapo/blockchain-presentation-by-will" target="_blank">github.com/thinkocapo/blockchain-presentation-by-will</a> and demo to the Medellin Cryptocurrency Meetup</li>
+                    <li>Open-source contribution to the decentralized video player <a href="https://github.com/Paratii-Video" target="_blank">github.com/Paratii-Video</a></li>
+                </ul>
+        </div>
 
-            <!-- <h4 id="johns-hopkins-university-s-center-for-talented-youth">Johns Hopkins University’s Center For Talented Youth</h4>
-            <h5 id="teaching-assistant-summer-2009-2010-2011">Teaching Assistant Summer 2009, 2010, 2011</h5>
+        <div *ngSwitchCase="'education'" style="min-height: 600px">
+            <h3 id="education" style="text-align:center;">Ongoing</h3>
+            <h5 id="consensys-developer-academy"><strong>ConsenSys Developer Academy</strong> (2018)</h5>
+                <ul>
+                    <li>Smart contract and dApp development course to become an industry-leading ethereum developer</li>
+                </ul>
+            <h5 id="harvard-extension-school-august-2016-december-2016"><strong>Harvard Extension School</strong> (2016)</h5>
             <ul>
+                <li>Java for Distributed Programming &amp; Hadoop course, Core Java, Multi-threading, MapReduce jobs in Hadoop</li>
+            </ul>
+            <h5 id="fullstack-academy-nyc"><strong>Fullstack Academy NYC</strong> (2015)</h5>
+            <ul>
+                <li>Immersive software engineering bootcamp, focusing on JavaScript and the MEAN stack</li>
+                <li>Created audio visualizer of music by adjusting audio buffers, frequencies, decibels, shapes, and colors</li>
+            </ul>
+            <h5 id="educare-br-intern-developer"><strong>Educare.br</strong> (2015)</h5>
+            <ul>
+                <li>Internship as Developer</li>
+                <li>Developer at Educare.Br, a second-stage VC-backed startup that provides online virtual classrooms</li>
+                <li>Learned MVC through CakePHP, communicated in Portuguese with teammates in office</li>
+            </ul>
+            <h5 id="center-for-talented-youth"><strong>Johns Hopkins University’s Center For Talented Youth</strong> (Summers 2008, 2009, 2010)</h5>
+            <ul>
+                <li>Internship as Teaching Assistant</li>
                 <li>Taught 220 hours of biotechnology in intensive 3 week sessions to advanced teenagers in labs and classrooms</li>
-            </ul> -->
+            </ul>
+            <h5 id="roger-williams-university-b-s-biology-2006-2010"><strong>Roger Williams University</strong> (Class 2010)</h5>
+            <ul>
+                <li>B.S. Biology</li>
+            </ul>
+
         </div>
         
-        <div *ngSwitchCase="'freelance'">
+        <!-- <div *ngSwitchCase="'freelance'">
                 <h3 id="current-job-freelance-entrepreneurship" style="text-align: center;">FREELANCE</h3>
                 <h5 id="claimcdr-software-engineer-co-founder-equity-partner"><strong>ClaimCDR</strong> - Software Engineer</h5>
                     <ul>
@@ -143,77 +219,17 @@
                     </ul>
                 <h5 id="team-arrayo"><strong>Team Arrayo</strong> - Software Engineer</h5>
                 <h5 id="team-arrayo"><strong>TopFlightApps</strong> - Sales & Business Development</h5>
-        </div>
+        </div> -->
 
     </div>
     
     
-
-
-    <!-- links to the projects I did with these * -->
+    <!-- links to the projects I did with these -->
     <!-- <ul>
     <li>Android, Kotlin, </li>
     <li>Elastic Beanstalk, S3, SNS/SQS, </li>
     <li>Web Audio API, D3.js, Electron, Sockets
-    </li> -->
-
-        
-
-
-    
-
-
-
-
-
-
-
-    <!-- <h3 id="blockchain-section" style="text-align: center;">Blockchain</h3>
-        <h5 id="consensys-developer-academy">ConsenSys Developer Academy</h5>
-            <ul>
-                <li>Smart contract and dApp development course to become an industry-leading ethereum developer. 2018
-                </li>
-                <li><a href="github.com/thinkocapo/full-stack-fund">link</a> Medellin, Colombia 2018</li>
-            </ul>
-
-    <h5 id="full-stack-fund">Full Stack Fund</h5>
-        <ul>
-            <li>Smart contracts for creating individual ether lotteries with varying participants and contribution amounts</li>
-            <li>Metamask, Web3js, Solidity Contracts, Ganache, Testrpc, automated by Tmux and shell scripts
-        </ul>
-
-    <h5 id="hashtronic">Hashtronic</h5>
-        <ul>
-            <li><a href="github.com/thinkocapo/hash-tronic">link</a> Medellin, Colombia 2018</li>
-            <li>Web3 and Node.js Scripting utility to send raw ethereum transactions on mainnet, using remote geth node API
-            Paratii github.com/Paratii-Video</li>
-        </ul> -->
-
-
-
-
-
-
-        
+    </li> -->        
         </div>
     </div>
 </div>
-
-
-<!-- <h3 id="other-projects">Other Projects</h3>
-<ul>
-<li><a href="github.com/thinkocapo/repositories">repositories</a> - Rag Tag on Android, Tmux-Fun, Audio-Visualizer with Electron.io D3.js</li>
-</ul> -->
-
-
-<!-- <li>Open-source contributions to a decentralized video player Paratii<h4 id="blockchain-r-d-and-leadership">Blockchain R&amp;D and Leadership</h4>
-    </li>
-    <li>Run full nodes of Ethereum, EOS, Cardano, Bitcoin</li>
-    <li>Blockchain presentation and demo to peers and cryptocurrency meetup in Medellin • Reddit.com/user/thinkocapo/ r/ethdev</li>
-    </ul> -->
-
-
-<!-- 
-    <li>São Paulo, Brazil Jan - Jul 2015</li>
-    <li>Online virtual classrooms, learned MVC and CakePHP, worked in Portuguese with developers in São Paulo office</li>
-    <li>Self-taught javascript and web dev from an apartment in São Paulo, to pass entrance exams for Fullstack Academy</li> -->
