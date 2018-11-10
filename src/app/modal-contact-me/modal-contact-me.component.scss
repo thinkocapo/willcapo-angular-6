@@ -3,7 +3,8 @@
     // background-color: #4d1b00;
     // background-color: #3e3117;
     // background-color: #eab64f;
-    background-color: #ffb400;
+    // background-color: #ffb400;
+    background-color: #554840;
     filter: opacity(0.9);
 }
 
@@ -11,16 +12,20 @@
     // background-color: #FF6700; //safety orange
     // background-color: #dfa943; // caramel woods
     // background-color: #eab64f;
-    color: black;
+    // color: black;
 }
 
 .contact-me-text-color {
     // color: #ffb400;
-    // color: white;
-    color: black;
+    color: white;
+    // color: black;
 }
 
 .contact-me-submit {
-    color: black;
-    border-color: black;
+    color: white;
+    border-color: white;
+}
+
+.message-body {
+    height: 125px;
 }
