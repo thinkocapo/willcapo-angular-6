@@ -138,16 +138,17 @@
     display: inline-block;
     padding: 8px;
 }
-
+.wc-nav-app-name {
+    font-size: 38px;
+    width: 225px;
+}
+.wc-nav-app-name span:hover {
+    color: white !important;
+    font-weight: 900; // normal , lighter, bold, 800
+}
 .wc-nav-text-color {
     color: #202020 !important;
     font-weight: 900; // normal , lighter, bold, 800
-}
-.wc-nav-app-name {
-    font-size: 38px;
-    // margin: auto;
-    // text-align: center;
-    width: 225px;
 }
 
 
