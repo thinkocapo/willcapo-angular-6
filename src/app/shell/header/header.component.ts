@@ -19,7 +19,15 @@ export class HeaderComponent implements OnInit {
               private authenticationService: AuthenticationService,
               private i18nService: I18nService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+
+    const self = this
+    window.addEventListener("resize", function(event){
+      if (window.innerWidth > 400) {
+        self.textLeft = false
+      }
+    });
+  }
 
   // w3 mobile navbar
   myFunction() {
