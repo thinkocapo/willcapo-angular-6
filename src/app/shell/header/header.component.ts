@@ -13,11 +13,21 @@ export class HeaderComponent implements OnInit {
   menuHidden = true;
   navbarItems = ['RESUME', 'FHIR', 'BLOCKCHAIN', 'CODE']
   currentNavbarItem = 'MENU'
+  textLeft = false
+
   constructor(private router: Router,
               private authenticationService: AuthenticationService,
               private i18nService: I18nService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+
+    const self = this
+    window.addEventListener("resize", function(event){
+      if (window.innerWidth > 400) {
+        self.textLeft = false
+      }
+    });
+  }
 
   // w3 mobile navbar
   myFunction() {
@@ -35,7 +45,9 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleMenu() {
+    console.log('TOGGLE MENU...')
     this.menuHidden = !this.menuHidden;
+    this.textLeft = true
   }
 
   setLanguage(language: string) {

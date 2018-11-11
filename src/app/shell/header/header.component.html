@@ -1,20 +1,19 @@
+<!-- style="max-width: fit-content" -->
 <header class="wc-header">
-  <nav class="z-index-1 navbar navbar-expand-lg navbar-dark wc-navbar">
+  <nav class="justify-content-center z-index-1 navbar navbar-expand-lg navbar-dark wc-navbar">
     
     <!-- MENU 'HAMBURGER' -->
-    <!-- <button
+    <button
       (click)="toggleMenu()"
       class="navbar-toggler" type="button" aria-controls="navbar-menu"
       aria-label="Toggle navigation" [attr.aria-expanded]="!menuHidden">
-      <a class="navbar-brand" href="https://github.com/ngx-rocket" translate>MENU</a>    
-      <a class="navbar-brand" translate>MENU</a>
+      <a class="navbar-brand" translate>WILL CAPO</a>    
       <span class="navbar-toggler-icon"></span>
-    </button> -->
+    </button>
 
-    <!-- style="max-width: fit-content" -->
 
-    <!-- MINI NAVBAR -->
-    <div 
+    <!-- * MINI NAVBAR * -->
+    <!-- <div 
       class="navbar-toggler wc-mobile-navbar no-border text-center" aria-controls="navbar-menu"
       aria-label="Toggle navigation" [attr.aria-expanded]="!menuHidden">
       <div class="row">
@@ -26,7 +25,7 @@
             <div class="mobile-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">CODE</div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- W3 MOBILE NAVBAR https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
     <!-- <div class="topnav">
@@ -41,10 +40,12 @@
       </a>
     </div> -->
 
+    <!-- [ngClass]="{ 'ta-center': regularBool }"    -->
+
     <!-- REGULAR NAVBAR -->
     <div id="navbar-menu" class="collapse navbar-collapse justify-content-center float-xs-none" [ngbCollapse]="menuHidden">
-      <div class="navbar-nav">
-        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" 
+      <div class="navbar-nav ta-center" [ngClass]="{ 'ta-left': textLeft === true }">
+        <a id="resume-nav" class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase" 
           routerLink="/resume" routerLinkActive="active">
           <span translate>RESUME</span>
         </a>
