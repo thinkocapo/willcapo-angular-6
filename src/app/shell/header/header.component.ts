@@ -13,6 +13,8 @@ export class HeaderComponent implements OnInit {
   menuHidden = true;
   navbarItems = ['RESUME', 'FHIR', 'BLOCKCHAIN', 'CODE']
   currentNavbarItem = 'MENU'
+  textLeft = false
+
   constructor(private router: Router,
               private authenticationService: AuthenticationService,
               private i18nService: I18nService) { }
@@ -35,7 +37,9 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleMenu() {
+    console.log('TOGGLE MENU...')
     this.menuHidden = !this.menuHidden;
+    this.textLeft = true
   }
 
   setLanguage(language: string) {
