@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SkipSelf } from '@angular/core';
 import { ReduxService } from '@app/services/redux.service'
 // import { QuoteService } from './quote.service';
 
@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
 
   quote: string;
   isLoading: boolean;
+  showMouseCircle = false;
 
   constructor(
     private reduxService: ReduxService
@@ -39,6 +40,7 @@ export class HomeComponent implements OnInit {
     }, function() {
     }).on("mousemove", function(e) {
       var mouseCircle = document.getElementById('wc-mouse-circle');
+      if (!mouseCircle) return
       const originalEvent: any = e.originalEvent
       mouseCircle.style.left = (originalEvent.clientX - 26) + 'px';
       mouseCircle.style.top = (originalEvent.clientY - 26) +'px';
@@ -47,8 +49,8 @@ export class HomeComponent implements OnInit {
     $("#wc-card-container").hover(function() {
     }, function() {
     }).on("mouseleave", function(e) {
-      // console.log('MOUSE EXITING *****')
       var mouseCircle = document.getElementById('wc-mouse-circle');
+      if (!mouseCircle) return
       mouseCircle.style.display = "none";
     });
 
@@ -56,7 +58,22 @@ export class HomeComponent implements OnInit {
     }, function() {
     }).on("mouseenter", function(e) {
       var mouseCircle = document.getElementById('wc-mouse-circle');
+      if (!mouseCircle) return
       mouseCircle.style.display = "block";
+    });
+
+    const self = this
+    if (window.innerWidth > 400) {
+      self.showMouseCircle = true
+    } else {
+      self.showMouseCircle = false
+    }
+    window.addEventListener("resize", function(event){
+      if (window.innerWidth > 400) {
+        self.showMouseCircle = true
+      } else {
+        self.showMouseCircle = false
+      }
     });
     
     this.reduxService.connect('reducerStyles')(this.onReduxUpdate)
