@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
 
     // https://stackoverflow.com/questions/21269206/jquery-receives-empty-values-from-div-tags-on-mouseover-event
-    $("#wc-card-container").hover(function() {
+    $("#wc-body-card").hover(function() {
     }, function() {
     }).on("mousemove", function(e) {
       var mouseCircle = document.getElementById('wc-mouse-circle');
@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
       mouseCircle.style.top = (originalEvent.clientY - 26) +'px';
     });
 
-    $("#wc-card-container").hover(function() {
+    $("#wc-body-card").hover(function() {
     }, function() {
     }).on("mouseleave", function(e) {
       var mouseCircle = document.getElementById('wc-mouse-circle');
@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
       mouseCircle.style.display = "none";
     });
 
-    $("#wc-card-container").hover(function() {
+    $("#wc-body-card").hover(function() {
     }, function() {
     }).on("mouseenter", function(e) {
       var mouseCircle = document.getElementById('wc-mouse-circle');
@@ -87,13 +87,14 @@ export class HomeComponent implements OnInit {
       name: 'Music', description: 'videos and music',
       callToAction: function playFunkyMusic() {},
       img: "assets/new-orleans-jazz.jpg"
-    }, 
-    {
-      name: 'Writings', description: 'pieces written',
-      callToAction: function loadWritingsFunc() {},
-      // img: "assets/amazon-sunset-3.JPG" // too dark
-      img: "assets/colombia-cow-santa-elena.jpg"
-    }, 
+    },
+    // Link to here from Book List 
+    // {
+    //   name: 'Writings', description: 'pieces written',
+    //   callToAction: function loadWritingsFunc() {},
+    //   // img: "assets/amazon-sunset-3.JPG" // too dark
+    //   img: "assets/colombia-cow-santa-elena.jpg"
+    // }, 
     {
       name: 'Apply Color', description: 'colorize this web page',
       callToAction: function colorizeFunc() {
@@ -103,23 +104,25 @@ export class HomeComponent implements OnInit {
       img: "assets/colombia-chiva.jpg"
     }, 
     {
-      name: 'Apply Picture', description: 'background photo, reset',
+      name: 'Backgroud Video', description: 'see the world',
       callToAction: function picturizeFunc() {},
       // img: "assets/camera.jpeg"
       img: "assets/recife-horse-cart.JPG"
     }, 
+    // already in Resume
+    // {
+    //   name: 'Sales & Consulting', description: "Link to page",
+    //   callToAction: function whatTheFunc() {},
+    //   img: "assets/belo-horizonte-people.JPG"
+    // }, 
     {
-      name: 'Sales & Consulting', description: "Link to page",
-      callToAction: function whatTheFunc() {},
-      img: "assets/belo-horizonte-people.JPG"
-    }, 
-    {
+      // TODO - have the page include a link to My Writings
       name: 'Book List', description: 'favorites',
       callToAction: function funkyBooks() {},
       img: "assets/harvard.jpg"
     }, 
     {
-      name: 'How This Works', description: 'the code behind this site',
+      name: 'How This Works', description: 'the c0de beh!nd this site',
       callToAction: function funkyFunc() {},
       img: "assets/workspace-guitar.jpg"
       // img: "assets/ukraine-office.jpg" // too plain
