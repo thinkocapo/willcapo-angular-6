@@ -40,10 +40,13 @@
 
 
 /******** CARD ******/
+// #wc-body-card {
+//     cursor: none;    
+// }
 #wc-card-container {
     cursor: none;
     // cursor: default;
-    max-width: 75%;
+    max-width: 50%;
 }
 // by id selector because only 1 place used
 #wc-card {
@@ -164,6 +167,7 @@
     // background-color: #41533b; // this was set in body {} 
     border-radius: 6px;
     padding-bottom: 11px;
+    cursor: none;
 }
 
 
