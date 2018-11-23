@@ -100,7 +100,6 @@ export class HomeComponent implements OnInit {
       callToAction: function colorizeFunc() {
         console.log('this will call a redux Action to update the color palette', this)
       },
-      // img: "assets/palette.png"
       img: "assets/colombia-chiva.jpg"
     }, 
     // Moved to Videos and Music, for now

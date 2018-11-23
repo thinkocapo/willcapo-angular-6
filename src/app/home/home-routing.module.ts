@@ -10,6 +10,7 @@ import { CodeComponent } from '@app/code/code.component';
 import { BlockchainComponent } from '@app/blockchain/blockchain.component';
 import { BooksComponent } from '@app/books/books.component';
 import { HealthcareComponent } from '@app/healthcare/healthcare.component';
+import { VideosComponent } from '@app/videos/videos.component';
 
 const routes: Routes = [
   Shell.childRoutes([
@@ -17,8 +18,11 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'resume', component: ResumeComponent }, // data: { title: extract('Resume') } } // updates browser tab title
     { path: 'travel', component: TravelComponent },
-    { path: 'code', component: CodeComponent }
-
+    { path: 'code', component: CodeComponent },
+    { path: 'blockchain', component: BlockchainComponent },
+    { path: 'healthcare', component: HealthcareComponent },
+    { path: 'books', component: BooksComponent },
+    { path: 'videos', component: VideosComponent }
   ])
 ];
 
