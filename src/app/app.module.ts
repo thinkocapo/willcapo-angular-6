@@ -22,6 +22,7 @@ import { storeLogger } from 'ngrx-store-logger';
 import { ActionReducerMap, ActionReducer } from '@ngrx/store';
 import { ResumeComponent } from './resume/resume.component';
 import { PhotosComponent } from './photos/photos.component';
+import { TravelComponent } from './travel/travel.component';
 // import { ModalContactMeComponent } from './modal-contact-me/modal-contact-me.component';
 
 
@@ -53,7 +54,7 @@ export const metaReducers = environment.production ? [] : [logger];
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],
   // declarations: [AppComponent, ModalContactMeComponent],
-  declarations: [AppComponent, ResumeComponent, PhotosComponent],
+  declarations: [AppComponent, ResumeComponent, PhotosComponent, TravelComponent],
   providers: [
   ],
   bootstrap: [AppComponent]

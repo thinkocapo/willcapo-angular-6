@@ -5,12 +5,14 @@ import { extract } from '@app/core';
 import { HomeComponent } from './home.component';
 import { ResumeComponent } from '../resume/resume.component';
 import { Shell } from '@app/shell/shell.service';
+import { TravelComponent } from '@app/travel/travel.component';
 
 const routes: Routes = [
   Shell.childRoutes([
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent }, // data: { title: extract('Home') } updates browser tab title
-    { path: 'resume', component: ResumeComponent } // data: { title: extract('Resume') } } // updates browser tab title
+    { path: 'home', component: HomeComponent },
+    { path: 'resume', component: ResumeComponent }, // data: { title: extract('Resume') } } // updates browser tab title
+    { path: 'travel', component: TravelComponent }
   ])
 ];
 
