@@ -80,7 +80,7 @@ export class HomeComponent implements OnInit {
     this.cards = [
     {
       name: 'Travel', description: 'photo albums',
-      callToAction: function travelFunc() {},
+      callToAction: function travelFunc() {}, // function calls go to routerLink '/travel'
       img: "assets/amazon-boat-great.JPG"
     }, 
     {
@@ -117,7 +117,7 @@ export class HomeComponent implements OnInit {
     {
       // TODO - have the page include a link to My Writings
       name: 'Books', description: 'favorites and writings',
-      callToAction: function funkyBooks() {},
+      callToAction: function funkyBooks() {},// function calls go to routerLink '/books'
       img: "assets/harvard.jpg"
     }
     // Moved into CODE component, navbar
