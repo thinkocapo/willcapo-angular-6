@@ -80,11 +80,11 @@ export class HomeComponent implements OnInit {
     this.cards = [
     {
       name: 'Travel', description: 'photo albums',
-      callToAction: function travelFunc() {},
+      callToAction: function travelFunc() {}, // function calls go to routerLink '/travel'
       img: "assets/amazon-boat-great.JPG"
     }, 
     {
-      name: 'Music', description: 'videos and music',
+      name: 'Music Videos', description: 'videos',
       callToAction: function playFunkyMusic() {},
       img: "assets/new-orleans-jazz.jpg"
     },
@@ -100,15 +100,14 @@ export class HomeComponent implements OnInit {
       callToAction: function colorizeFunc() {
         console.log('this will call a redux Action to update the color palette', this)
       },
-      // img: "assets/palette.png"
       img: "assets/colombia-chiva.jpg"
     }, 
-    {
-      name: 'Backgroud Video', description: 'see the world',
-      callToAction: function picturizeFunc() {},
-      // img: "assets/camera.jpeg"
-      img: "assets/recife-horse-cart.JPG"
-    }, 
+    // Moved to Videos and Music, for now
+    // {
+    //   name: 'Backgroud Video', description: 'see the world',
+    //   callToAction: function picturizeFunc() {},
+    //   img: "assets/recife-horse-cart.JPG"
+    // }, 
     // already in Resume
     // {
     //   name: 'Sales & Consulting', description: "Link to page",
@@ -117,16 +116,16 @@ export class HomeComponent implements OnInit {
     // }, 
     {
       // TODO - have the page include a link to My Writings
-      name: 'Book List', description: 'favorites',
-      callToAction: function funkyBooks() {},
+      name: 'Books', description: 'favorites and writings',
+      callToAction: function funkyBooks() {},// function calls go to routerLink '/books'
       img: "assets/harvard.jpg"
-    }, 
-    {
-      name: 'How This Works', description: 'the c0de beh!nd this site',
-      callToAction: function funkyFunc() {},
-      img: "assets/workspace-guitar.jpg"
-      // img: "assets/ukraine-office.jpg" // too plain
-    }]
+    }
+    // Moved into CODE component, navbar
+    // {
+      // name: 'How This Works', description: 'the c0de beh!nd this site',
+      // callToAction: function funkyFunc() {}, 
+      // img: "assets/workspace-guitar.jpg"
+    ]
     
     this.isLoading = true;
     // .pipe(finalize(() => { this.isLoading = false; }))

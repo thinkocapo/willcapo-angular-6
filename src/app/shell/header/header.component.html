@@ -11,37 +11,6 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-
-    <!-- * MINI NAVBAR * -->
-    <!-- <div 
-      class="navbar-toggler wc-mobile-navbar no-border text-center" aria-controls="navbar-menu"
-      aria-label="Toggle navigation" [attr.aria-expanded]="!menuHidden">
-      <div class="row">
-        <div class="col-2 wc-mobile-menu">WILL CAPO</div>
-        <div class="col-10 wc-mobile-fit-column">
-            <div class="mobile-nav-item navbar-toggler" routerLink="/resume" routerLinkActive="active">RESUME</div>
-            <div class="mobile-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">FHIR</div>
-            <div class="mobile-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">BLOCKCHAIN</div>
-            <div class="mobile-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">CODE</div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- W3 MOBILE NAVBAR https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
-    <!-- <div class="topnav">
-      <a href="#home" class="active">Logo</a>
-      <div id="myLinks">
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" (click)="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div> -->
-
-    <!-- [ngClass]="{ 'ta-center': regularBool }"    -->
-
     <!-- REGULAR NAVBAR -->
     <div id="navbar-menu" class="collapse navbar-collapse justify-content-center float-xs-none" [ngbCollapse]="menuHidden">
       <div class="navbar-nav ta-center" [ngClass]="{ 'ta-left': textLeft === true }">
@@ -49,30 +18,60 @@
           routerLink="/resume" routerLinkActive="active">
           <span translate>RESUME</span>
         </a>
-        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase"> 
-          <span translate>FHIR</span>
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase"
+          routerLink="/healthcare" routerLinkActive="active"> 
+          <span translate>HEALTHCARE</span>
         </a>
         <a *ngIf="menuHidden" class="nav-item wc-nav-app-name nav-link text-uppercase text-center" 
           routerLink="/home" routerLinkActive="active">
           <span class="wc-nav-text-color" bg-success translate>WILL CAPO</span>
           <!-- <span class="wc-nav-text-color" bg-success translate>APP_NAME</span> -->
         </a>
-        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase">
-          <!-- href="https://medium.com/@thinkocapo/technical-evaluations-of-blockchain-and-how-to-start-developing-with-them-807a6e015824" target="_blank"> -->
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase"
+          routerLink="/blockchain" routerLinkActive="active">
           <span translate>BLOCKCHAIN</span>
         </a>
-        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase">
-          <!-- href="https://www.github.com/thinkocapo/" target="_blank" -->
-          <span translate>GITHUB/CODE</span>
+        <a class="nav-item wc-nav-item wc-nav-text-color nav-link text-uppercase"
+          routerLink="/code" routerLinkActive="active">
+          <span translate>CODE</span>
         </a>
       </div>
     </div>
-    <!-- href="https://www.dev7.claimcdr.com" target="_blank" -->
-
   </nav>
 </header>
 
 
+<!-- * MINI NAVBAR * -->
+<!-- <div 
+  class="navbar-toggler wc-mobile-navbar no-border text-center" aria-controls="navbar-menu"
+  aria-label="Toggle navigation" [attr.aria-expanded]="!menuHidden">
+  <div class="row">
+    <div class="col-2 wc-mobile-menu">WILL CAPO</div>
+    <div class="col-10 wc-mobile-fit-column">
+        <div class="mobile-nav-item navbar-toggler" routerLink="/resume" routerLinkActive="active">RESUME</div>
+        <div class="mobile-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">FHIR</div>
+        <div class="mobile-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">BLOCKCHAIN</div>
+        <div class="mobile-nav-item navbar-toggler" routerLink="/home" routerLinkActive="active">CODE</div>
+    </div>
+  </div>
+</div> -->
+
+<!-- W3 MOBILE NAVBAR https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+<!-- <div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" (click)="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div> -->
+
+
+
+<!-- [ngClass]="{ 'ta-center': regularBool }"    -->
 
 
 <!-- old mini navbar
