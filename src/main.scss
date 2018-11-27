@@ -169,6 +169,7 @@
     border-radius: 6px;
     padding-bottom: 11px;
     cursor: none;
+    height: 800px;
 }
 
 
@@ -212,9 +213,9 @@
 }
 
 .footer {
-    // position: absolute; // Commented this out, fixed footer to stay at bottom
+    position: absolute; // Commented this out, fixed footer to stay at bottom
     right: 0;
-    bottom: -11px;
+    bottom: 0px; // -11px
     left: 0;
     padding: 1rem;
     text-align: center;

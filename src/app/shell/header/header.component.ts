@@ -11,7 +11,7 @@ import { AuthenticationService, I18nService } from '@app/core';
 export class HeaderComponent implements OnInit {
 
   menuHidden = true;
-  navbarItems = ['RESUME', 'FHIR', 'BLOCKCHAIN', 'CODE']
+  navbarItems = ['RESUME', 'HEALTHCARE', 'BLOCKCHAIN', 'CODE']
   currentNavbarItem = 'MENU'
   textLeft = false
 
@@ -45,7 +45,6 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleMenu() {
-    console.log('TOGGLE MENU...')
     this.menuHidden = !this.menuHidden;
     this.textLeft = true
   }
