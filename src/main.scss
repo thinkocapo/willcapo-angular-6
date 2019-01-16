@@ -22,11 +22,23 @@
 }
 
 .default-body-color {
-    background-color: #41533b;
+    background-color: #41533b !important;
 }
 
 .default-footer-color {
     background-color: #554840 !important;
+}
+
+.template-navbar-color {
+    background-color: white !important;
+}
+
+.template-body-color {
+    background-color: white !important;
+}
+
+.template-footer-color {
+    background-color: white !important;
 }
 
 // .default-navbar-color
