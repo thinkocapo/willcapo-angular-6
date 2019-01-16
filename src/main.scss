@@ -15,6 +15,16 @@
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss";
 @import "theme/theme";
 
+/** STANDARDIZATION **/
+.default-body-color {
+    background-color: #41533b;
+}
+
+// .default-navbar-color
+
+// .default-footer-color
+
+
 /**** PALETTES ****/
 // https://www.color-hex.com/color-palette/4575 Camouflage Palette 1
 .palette-1 {
@@ -244,9 +254,8 @@ body {
     padding: 0;
     min-height: 100%;
     
-    // TEST
-    //background-color: #41533b;
-    //
+    // TEST 01/16/19
+    // background-color: #41533b;
 
     // padding-bottom: 6rem;
 }

@@ -1,6 +1,10 @@
+.back {
+  min-height: -webkit-fill-available;
+}
+
 .jumbotron.vertical-center {
     margin-bottom: 0; /* Remove the default bottom margin of .jumbotron */
-    background-color: gray;
+    // background-color: gray;
 }
   
   .vertical-center {
