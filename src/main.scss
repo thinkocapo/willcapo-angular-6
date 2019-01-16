@@ -15,6 +15,37 @@
 @import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss";
 @import "theme/theme";
 
+// https://stackoverflow.com/questions/17893823/how-to-pass-parameters-to-css-classes
+/** STANDARDIZATION **/
+.default-navbar-color {
+    background-color: #554840 !important;
+}
+
+.default-body-color {
+    background-color: #41533b !important;
+}
+
+.default-footer-color {
+    background-color: #554840 !important;
+}
+
+.template-navbar-color {
+    background-color: white !important;
+}
+
+.template-body-color {
+    background-color: white !important;
+}
+
+.template-footer-color {
+    background-color: white !important;
+}
+
+// .default-navbar-color
+
+// .default-footer-color
+
+
 /**** PALETTES ****/
 // https://www.color-hex.com/color-palette/4575 Camouflage Palette 1
 .palette-1 {
@@ -109,7 +140,7 @@
 }
 .wc-navbar {
     // background-color: #9e9a75 !important
-    background-color: #554840 !important;
+    // background-color: #554840 !important; // WAS IN USE BEFORE default-navbar-color
     // margin-bottom: 0px !important;
 
     padding-top: 0px !important; // so nav items expand and fit
@@ -188,12 +219,12 @@
     border-width: 5px 0px 5px 0px;
     border-radius: 6px;
 }
-.wc-footer-color {
-    // background-color: #554840 !important; // darker brown
-    // background-color: #604439 !important; // ligher brown
-    // background-color: #3e3117 !important;
-    background-color: #554840 !important;
-}
+// .wc-footer-color {
+//     // background-color: #554840 !important; // darker brown
+//     // background-color: #604439 !important; // ligher brown
+//     // background-color: #3e3117 !important;
+//     background-color: #554840 !important;
+// }
 .wc-footer-contact-me {
     font-size: 2em;
     // background-color: #dfa943; // darker, but too dark with opacity filter
@@ -243,7 +274,10 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    background-color: #41533b;
+    
+    // TEST 01/16/19
+    // background-color: #41533b;
+
     // padding-bottom: 6rem;
 }
 
