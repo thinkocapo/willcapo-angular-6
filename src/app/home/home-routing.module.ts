@@ -12,6 +12,9 @@ import { BooksComponent } from '@app/books/books.component';
 import { HealthcareComponent } from '@app/healthcare/healthcare.component';
 import { VideosComponent } from '@app/videos/videos.component';
 
+import { TemplateComponent } from '@app/template/template.component';
+
+
 const routes: Routes = [
   Shell.childRoutes([
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,7 +25,8 @@ const routes: Routes = [
     { path: 'blockchain', component: BlockchainComponent },
     { path: 'healthcare', component: HealthcareComponent },
     { path: 'books', component: BooksComponent },
-    { path: 'videos', component: VideosComponent }
+    { path: 'videos', component: VideosComponent },
+    { path: 'template', component: TemplateComponent }
   ])
 ];
 
